@@ -12,9 +12,9 @@ Memory: 0x17011000
 
 Use a writeable directory: /tmp
 
-``` $ find . -writable ``
+``` $ find . -writable ```
 
-Here is the shellcode I used (mostly from Yan):
+Here is the shellcode I used (mostly from Yan's slides):
 ```
 .global _start
 
