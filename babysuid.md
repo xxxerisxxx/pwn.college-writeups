@@ -16,26 +16,35 @@ Use ``` --no-preserve=mode ``` from man pages.
 ## Instance 3
 /bin/more
 
-```
-$ more /flag
-```
-## Instance 4
+``` $ more /flag ```
+
+## Instace 4
+/bin/nano
+
+``` $ nano /flag ```
+
+## Instance 6
 /usr/bin/find
 
 Read man pages and there is a way to execute commands using find.
 
-``` -exec COMMAND {} ;```
+``` -exec COMMAND {} ; ```
 
 Use \ to escape the characters.
 
 ![usrbinfind](https://user-images.githubusercontent.com/45490952/119248014-04a42000-bb43-11eb-853a-795a481c19cb.PNG)
 
-## Instance 5
+## Instance 7
 /usr/bin/head
 
 ``` $ head /flag ```
 
-## Instance 6
+## Instance 8
 /usr/bin/tail
 
 ``` $ tail /flag ```
+
+## Instance 9
+/usr/bin/vim.basic
+
+``` $ vim.basic /flag ```
