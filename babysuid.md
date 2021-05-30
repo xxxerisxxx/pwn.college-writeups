@@ -48,3 +48,8 @@ Use \ to escape the characters.
 /usr/bin/vim.basic
 
 ``` $ vim.basic /flag ```
+
+## Instance 10
+/bin/dmesg
+
+``` $ dmesg -F /flag ```
