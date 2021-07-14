@@ -39,3 +39,40 @@ Use \ to escape the characters.
 /usr/bin/tail
 
 ``` $ tail /flag ```
+
+## Instance 7
+/usr/bin/hexdump
+
+``` $ hexdump -f flag ```
+
+## Instance 8
+/usr/bin/strings
+
+``` $ strings flag ```
+
+## Instance 9
+/bin/chmod
+
+``` $ chmod +rwx flag ```
+
+``` strings flag ```
+
+## Instance 10
+/usr/bin/groff
+
+``` $ groff -a flag ```
+
+### Instance 11
+/bin/dmesg
+
+``` $ dmesg -F flag ```
+
+### Instance 12
+/bin/nano
+
+``` $ nano flag ```
+
+### Instance 13 
+/bin/vim.basic
+
+``` $ vim flag ```
