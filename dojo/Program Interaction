@@ -1,0 +1,23 @@
+# Level1
+/challenge/embryoio_level1
+pwn.college{I7myo0_GuObd-Nzqrzho2IY5ulj.dFDLwIzW}
+
+# Level2
+/challenge/embryoio_level2
+AAAA
+denpdvtr
+pwn.college{AO-k7cJpigfCDLN7ENSk_OrH6F5.dJDLwIzW}
+
+# Level3
+#/challenge/embryoio_level3 wydxvplydy
+pwn.college{Qj2MUgbdXwkg1wa4r2JPiY85Wyt.dNDLwIzW}
+
+
+
+
+#
+#
+#
+/challenge/embryoio_level3
+readelf -a /challenge/embryoio_level3 | grep interpret
+/lib64/ld-linux-x86-64.so.2 /challenge/embryoio_level3 flag
