@@ -16,10 +16,55 @@ pwn.college{Qj2MUgbdXwkg1wa4r2JPiY85Wyt.dNDLwIzW}
 export casyvb='blunkdavkh'
 pwn.college{Ie-_RyjXzLZKPSJv6cGnmdZw6FT.dRDLwIzW}
 
+# Level5
+touch /tmp/miegkz
+/challenge/embryoio_level5 < /tmp/miegkz
+vim /tmp/miegkz (insert flag)
+/challenge/embryoio_level5 < /tmp/miegkz
+pwn.college{k1TPnd1NvlzfycqRiUYcBFWAemt.dVDLwIzW}
 
-#
-#
-#
-/challenge/embryoio_level3
+# Level6
+touch /tmp/qtmhrw
+/challenge/embryoio_level6 > /tmp/qtmhrw
+cat /tmp/qtmhrw
+pwn.college{ozbSY4e8vSvjkAkBZZEon2cUELB.dZDLwIzW}
+
+# Level7
+env -i /challenge/embryoio_level7
+pwn.college{0CMJ9WqteUQMfQFWvqBVPTPXTiF.ddDLwIzW}
+
+# Level8
+vim /tmp/script.sh
+```
+#!/bin/bash
+/challenge/embryoio_level8
+chmod +x /tmp/script.sh
+/tmp/script.sh
+```
+pwn.college{0Wz6KJpJCXIKPalygC1vMOfC-aN.dhDLwIzW}
+
+# Level9
+vim /tmp/script.sh
+```
+#!/bin/bash
+/challenge/embryoio_level9
+```
+chmod +x /tmp/script.sh
+pwn.college{cyWr3DWV1hUGp3tVPEanu_E6ciT.dlDLwIzW}
+
+# Level10
+vim /tmp/script.sh
+```
+#!/bin/bash
+/challenge/embryoio_level10 jxevdoesjg
+```
+chmod +x /tmp/script.sh
+pwn.college{cQ1aNA8tHtgIkGXIrFCKoNxyP8f.QXwEDLwIzW}
+
+
+
+
+
+
 readelf -a /challenge/embryoio_level3 | grep interpret
 /lib64/ld-linux-x86-64.so.2 /challenge/embryoio_level3 flag
