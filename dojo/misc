@@ -1,0 +1,2 @@
+readelf -a /challenge/embryoio_level3 | grep interpret
+/lib64/ld-linux-x86-64.so.2 /challenge/embryoio_level3 flag
