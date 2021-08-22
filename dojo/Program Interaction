@@ -38,9 +38,8 @@ vim /tmp/script.sh
 ```
 #!/bin/bash
 /challenge/embryoio_level8
-chmod +x /tmp/script.sh
-/tmp/script.sh
 ```
+chmod +x /tmp/script.sh
 pwn.college{0Wz6KJpJCXIKPalygC1vMOfC-aN.dhDLwIzW}
 
 # Level9
@@ -61,10 +60,75 @@ vim /tmp/script.sh
 chmod +x /tmp/script.sh
 pwn.college{cQ1aNA8tHtgIkGXIrFCKoNxyP8f.QXwEDLwIzW}
 
+# Level11
+touch /tmp/script.sh | chmod +x /tmp/script.sh
+```
+#!/bin/bash
+/challenge/embryoio_level11
+```
+export nomnxb='uynkuwzwjx'
+pwn.college{Q-5CG9jbQwzKBj4fS6NKINrj00l.QXxEDLwIzW}
+
+# Level12
+touch /tmp/script.sh
+chmod +x /tmp/script.sh
+```
+#!/bin/bash
+/challenge/embryoio_level12
+```
+#!/bin/bash
+touch /tmp/ceitej
+/challenge/embryoio_level12 < /tmp/ceitej
+```
+vim /tmp/ceitej (insert password)
+/tmp/script.sh
+pwn.college{EDfEwS7HImCicU0l4UaIPIuMwx0.QXyEDLwIzW}
+
+# Level13
+touch /tmp/script.sh | chmod +x /tmp/script.sh
+```
+#!/bin/bash
+/challenge/embryoio_level13 > /tmp/pxtiwd
+```
+cat /tmp/pxtiwd
+pwn.college{IxkevVoawMrtIabVgkcsyqU5KN-.QXzEDLwIzW}
+
+# Level14
+touch /tmp/script.sh | chmod +x /tmp/script.sh
+```
+#!/bin/bash
+env -i /challenge/embryoio_level14
+```
+pwn.college{YtX35LXs_4NiqEKZ4eCkg_GzmCE.QX0EDLwIzW}
+
+# Level15
+ipython3
+```
+import subprocess
+subprocess.run('/challenge/embryoio_level15') 
+```
+pwn.college{k0TpH3sf2UFhTHRSgiHcbhT22yx.QX1EDLwIzW}
+
+# Level16
+ipython3
+```
+import subprocess
+subprocess.run('/challenge/embryoio_level16') 
+```
+pwn.college{Q6AIaKDfBtWwuRL_0arnAhYc7Au.QX2EDLwIzW}
+
+# Level17
+ipython
+```
+import subprocess
+subprocess.run(['/challenge/embryoio_level17', 'ervtvsjbyp'])
+```
+pwn.college{I0OhP3N7FUsshmvYG_OgKQ5JTai.QX3EDLwIzW}
 
 
 
 
 
-readelf -a /challenge/embryoio_level3 | grep interpret
-/lib64/ld-linux-x86-64.so.2 /challenge/embryoio_level3 flag
+
+
+
