@@ -453,6 +453,13 @@ rev | ./script.sh
 rev'd pass + CTRL+D
 pwn.college{EVJWulUM3JF_WtirSmYDLaiaZai.QX3QDLwIzW}
 
+# Level48
+```
+ps = subprocess.Popen(["/challenge/embryoio_level48"], stdout=subprocess.PIPE)
+ps2 = subprocess.run("/usr/bin/cat", stdin=ps.stdout)
+```
+pwn.college{IwJD4C7UCNwxonfb-_zes4fFtiq.QX4QDLwIzW}
+
 # Level 54
 ```
 #!/usr/bin/python3
@@ -558,7 +565,17 @@ find . -exec /challenge/embryoio_level67 llcvvsdaar {} +
 pwn.college{MbM3GQgwR0GcGz8FExyNPdVVliX.QX3YDLwIzW}
 
 # Level68
+#!/bin/bash
+#nbtdcccras
+ARGV$334=
+/challenge/embryoio_level68
 
+# Level69
+#!/bin/bash
+#ARGC="$@"
+$0="$@" 
+echo $0
+/challenge/embryoio_level69
 
 
 
