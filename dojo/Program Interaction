@@ -254,6 +254,40 @@ void pwncollege() {
 	int pid = fork();
 	if(pid==0) {
 		static char *argv[] = {};
+		execv("/challenge/embryoio_level29", argv); // execv
+		exit(0);
+		//printf("This is the child process. My pid (child) is %d and my parent's id is %d.\n", getpid(), getppid());
+	}
+	else {
+		// wait
+		waitpid(pid,0,0);
+		//printf("This is the parent process. My pid (parent) is %d and my child's id is %d.\n", getpid(), pid);
+	}
+	
+	return 0;
+}
+
+int main() {
+	pwncollege();
+	return 0;
+}
+
+```
+gcc script.c -o script
+pwn.college{0lIKtpdcvW7Bb1s1Fu2FXtljGUv.QX5IDLwIzW}
+
+# Level30
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+
+void pwncollege() {
+	int pid = fork();
+	if(pid==0) {
+		static char *argv[] = {};
 		execv("/challenge/embryoio_level30", argv); // execv
 		exit(0);
 		//printf("This is the child process. My pid (child) is %d and my parent's id is %d.\n", getpid(), getppid());
@@ -278,10 +312,39 @@ int main() {
 	return 0;
 }
 ```
-gcc script.c -o script
 pwn.college{g3RWtbOkGMejYkWTMDwC0EtpNQ1.QXwMDLwIzW}
 
+# Level31
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
+void pwncollege() {
+	int pid = fork();
+	if(pid==0) {
+		static char *argv[] = {"/challenge/embryoio_level31", "alnmkjmuyd"};
+		execv(argv[0], argv); // execv
+		exit(0);
+		//printf("This is the child process. My pid (child) is %d and my parent's id is %d.\n", getpid(), getppid());
+	}
+	else {
+		// wait
+		waitpid(pid,0,0);
+		//printf("This is the parent process. My pid (parent) is %d and my child's id is %d.\n", getpid(), pid);
+	}
+	
+	return 0;
+}
+
+int main() {
+	pwncollege();
+	return 0;
+}
+```
+pwn.college{ALrXGldxZ3sXLRk2-rPlNo5vNBG.QXxMDLwIzW}
 
 
 
