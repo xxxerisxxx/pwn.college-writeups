@@ -1,39 +1,39 @@
-# Level1
+## Level1
 /challenge/embryoio_level1
 pwn.college{I7myo0_GuObd-Nzqrzho2IY5ulj.dFDLwIzW}
 
-# Level2
+## Level2
 /challenge/embryoio_level2
 AAAA
 denpdvtr
 pwn.college{AO-k7cJpigfCDLN7ENSk_OrH6F5.dJDLwIzW}
 
-# Level3
+## Level3
 /challenge/embryoio_level3 wydxvplydy
 pwn.college{Qj2MUgbdXwkg1wa4r2JPiY85Wyt.dNDLwIzW}
 
-# Level4
+## Level4
 export casyvb='blunkdavkh'
 pwn.college{Ie-_RyjXzLZKPSJv6cGnmdZw6FT.dRDLwIzW}
 
-# Level5
+## Level5
 touch /tmp/miegkz
 /challenge/embryoio_level5 < /tmp/miegkz
 vim /tmp/miegkz (insert flag)
 /challenge/embryoio_level5 < /tmp/miegkz
 pwn.college{k1TPnd1NvlzfycqRiUYcBFWAemt.dVDLwIzW}
 
-# Level6
+## Level6
 touch /tmp/qtmhrw
 /challenge/embryoio_level6 > /tmp/qtmhrw
 cat /tmp/qtmhrw
 pwn.college{ozbSY4e8vSvjkAkBZZEon2cUELB.dZDLwIzW}
 
-# Level7
+## Level7
 env -i /challenge/embryoio_level7
 pwn.college{0CMJ9WqteUQMfQFWvqBVPTPXTiF.ddDLwIzW}
 
-# Level8
+## Level8
 vim /tmp/script.sh
 ```
 #!/bin/bash
@@ -42,7 +42,7 @@ vim /tmp/script.sh
 chmod +x /tmp/script.sh
 pwn.college{0Wz6KJpJCXIKPalygC1vMOfC-aN.dhDLwIzW}
 
-# Level9
+## Level9
 vim /tmp/script.sh
 ```
 #!/bin/bash
@@ -51,7 +51,7 @@ vim /tmp/script.sh
 chmod +x /tmp/script.sh
 pwn.college{cyWr3DWV1hUGp3tVPEanu_E6ciT.dlDLwIzW}
 
-# Level10
+## Level10
 vim /tmp/script.sh
 ```
 #!/bin/bash
@@ -60,7 +60,7 @@ vim /tmp/script.sh
 chmod +x /tmp/script.sh
 pwn.college{cQ1aNA8tHtgIkGXIrFCKoNxyP8f.QXwEDLwIzW}
 
-# Level11
+## Level11
 touch /tmp/script.sh | chmod +x /tmp/script.sh
 ```
 #!/bin/bash
@@ -69,7 +69,7 @@ touch /tmp/script.sh | chmod +x /tmp/script.sh
 export nomnxb='uynkuwzwjx'
 pwn.college{Q-5CG9jbQwzKBj4fS6NKINrj00l.QXxEDLwIzW}
 
-# Level12
+## Level12
 touch /tmp/script.sh
 chmod +x /tmp/script.sh
 ```
@@ -84,7 +84,7 @@ vim /tmp/ceitej (insert password)
 /tmp/script.sh
 pwn.college{EDfEwS7HImCicU0l4UaIPIuMwx0.QXyEDLwIzW}
 
-# Level13
+## Level13
 touch /tmp/script.sh | chmod +x /tmp/script.sh
 ```
 #!/bin/bash
@@ -93,7 +93,7 @@ touch /tmp/script.sh | chmod +x /tmp/script.sh
 cat /tmp/pxtiwd
 pwn.college{IxkevVoawMrtIabVgkcsyqU5KN-.QXzEDLwIzW}
 
-# Level14
+## Level14
 touch /tmp/script.sh | chmod +x /tmp/script.sh
 ```
 #!/bin/bash
@@ -101,7 +101,7 @@ env -i /challenge/embryoio_level14
 ```
 pwn.college{YtX35LXs_4NiqEKZ4eCkg_GzmCE.QX0EDLwIzW}
 
-# Level15
+## Level15
 ipython3
 ```
 import subprocess
@@ -109,7 +109,7 @@ subprocess.run('/challenge/embryoio_level15')
 ```
 pwn.college{k0TpH3sf2UFhTHRSgiHcbhT22yx.QX1EDLwIzW}
 
-# Level16
+## Level16
 ipython3
 ```
 import subprocess
@@ -117,7 +117,7 @@ subprocess.run('/challenge/embryoio_level16')
 ```
 pwn.college{Q6AIaKDfBtWwuRL_0arnAhYc7Au.QX2EDLwIzW}
 
-# Level17
+## Level17
 ipython
 ```
 import subprocess
@@ -125,7 +125,7 @@ subprocess.run(['/challenge/embryoio_level17', 'ervtvsjbyp'])
 ```
 pwn.college{I0OhP3N7FUsshmvYG_OgKQ5JTai.QX3EDLwIzW}
 
-# Level18
+## Level18
 export ydyfmp='qocstoljuy'
 ipython
 ```
@@ -134,7 +134,7 @@ subprocess.run('/challenge/embryoio_level18')
 ```
 pwn.college{comqGZGca4BR_eglRB7pXiTl1mp.QX4EDLwIzW}
 
-# Level19
+## Level19
 ipython
 ```
 import subprocess
@@ -151,7 +151,7 @@ vim /tmp/gbozyl (enter password)
 ipython again
 pwn.college{A45KwcvUr2aVjgwDHUhWbxuWsbT.QX5EDLwIzW}
 
-# Level20
+## Level20
 import subprocess
 touch /tmp/temp & touch /temp/pazbjm
 input = open('/tmp/temp')
@@ -163,7 +163,7 @@ input.flush()
 cat /tmp/pazbjm
 pwn.college{8uAfbowlv8meVmMPC2bvjA2NE-A.QXwIDLwIzW}
 
-# Level21
+## Level21
 ipython
 ```
 import subprocess
@@ -171,7 +171,7 @@ subprocess.run(['env','-i','/challenge/embryoio_level21'])
 ```
 pwn.college{MgvMMFcWKom6GwwtU07eBQcb8FK.QXxIDLwIzW}
 
-# Level22
+## Level22
 vim /tmp/script.py
 ```
 #!/usr/bin/python3
@@ -180,14 +180,14 @@ subprocess.run('/challenge/embryoio_level22')
 ```
 pwn.college{UjT6drRpUKGxWnO3jgm6te5HBdK.QXyIDLwIzW}
 
-# Level23
+## Level23
 vim script.py
 #!/usr/bin/python3
 import subprocess
 subprocess.run('/challenge/embryoio_level23')
 pwn.college{0LyjLazZXojZTbtxBPTjs4uTOw3.QXzIDLwIzW}
 
-# Level24
+## Level24
 vim script.py
 ```
 #!/usr/bin/python3
@@ -196,7 +196,7 @@ subprocess.run(['/challenge/embryoio_level24','lbsgkucdxq'])
 ```
 pwn.college{wNPk12Rcaoai8wobK0J8tHf3R-V.QX0IDLwIzW}
 
-# Level25
+## Level25
 vim script.py
 ```
 #!/usr/bin/python3
@@ -206,7 +206,7 @@ subprocess.run('/challenge/embryoio_level25')
 export kufmnq='lgjqbknjmd'
 pwn.college{oephMtoMrXgB8SxvV7sAh7-wIMT.QX1IDLwIzW}
 
-# Level26
+## Level26
 touch /tmp/temp & touch /tmp/outfile
 ```
 #!/usr/bin/python3
@@ -220,7 +220,7 @@ output.flush()
 cat /tmp/outfile for pass, vim into /tmp/hqjjqm 
 pwn.college{sX3bpTWBrnrcLBjsIm2ZsYF0QN2.QX2IDLwIzW}
 
-# Level27
+## Level27
 touch /tmp/infile & touch /tmp/temp
 ```
 #!/usr/bin/python3
@@ -233,7 +233,7 @@ input.flush()
 ```
 pwn.college{oJ1PiNUd2BDT6vhciCxy9x75ipM.QX3IDLwIzW}
 
-# Level28
+## Level28
 vim script.py
 ```
 #!/usr/bin/python3
@@ -242,7 +242,7 @@ subprocess.run(['env','-i','/challenge/embryoio_level28'])
 ```
 pwn.college{o1G4FrhipYdh7hDAVizPEhyltcQ.QX4IDLwIzW}
 
-# Level29
+## Level29
 ```
 #include <stdlib.h>
 #include <stdio.h>
@@ -276,7 +276,7 @@ int main() {
 gcc script.c -o script
 pwn.college{0lIKtpdcvW7Bb1s1Fu2FXtljGUv.QX5IDLwIzW}
 
-# Level30
+## Level30
 ```
 #include <stdlib.h>
 #include <stdio.h>
@@ -314,7 +314,7 @@ int main() {
 ```
 pwn.college{g3RWtbOkGMejYkWTMDwC0EtpNQ1.QXwMDLwIzW}
 
-# Level31
+## Level31
 ```
 #include <stdlib.h>
 #include <stdio.h>
@@ -346,6 +346,7 @@ int main() {
 ```
 pwn.college{ALrXGldxZ3sXLRk2-rPlNo5vNBG.QXxMDLwIzW}
 
+## Level32
 
 
 
