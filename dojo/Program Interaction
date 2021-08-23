@@ -135,7 +135,33 @@ subprocess.run('/challenge/embryoio_level18')
 pwn.college{comqGZGca4BR_eglRB7pXiTl1mp.QX4EDLwIzW}
 
 # Level19
+ipython
+```
+import subprocess
+touch /tmp/gbozyl
+touch outfile
+input = open('/tmp/gbozyl') // catted the temp file to find this
+output = open('outfile', 'w') 
+p = subprocess.Popen('/challenge/embryoio_level19', stdin=input, stdout=output)
+p.wait()
+output.flush()
+```
+cat outfile for password //qncosffp
+vim /tmp/gbozyl (enter password)
+ipython again
+pwn.college{A45KwcvUr2aVjgwDHUhWbxuWsbT.QX5EDLwIzW}
+
 # Level20
+import subprocess
+touch /tmp/temp & touch /temp/pazbjm
+input = open('/tmp/temp')
+output = open('/tmp/pazbjm', 'w') 
+p = subprocess.Popen('/challenge/embryoio_level19', stdin=input, stdout=output)
+p.wait()
+input.flush()
+```
+cat /tmp/pazbjm
+pwn.college{8uAfbowlv8meVmMPC2bvjA2NE-A.QXwIDLwIzW}
 
 # Level21
 ipython
@@ -180,9 +206,32 @@ subprocess.run('/challenge/embryoio_level25')
 export kufmnq='lgjqbknjmd'
 pwn.college{oephMtoMrXgB8SxvV7sAh7-wIMT.QX1IDLwIzW}
 
-
 # Level26
+touch /tmp/temp & touch /tmp/outfile
+```
+#!/usr/bin/python3
+import subprocess
+input = open('/tmp/hqjjqm')
+output = open('/tmp/outfile', 'w')
+p = subprocess.Popen('/challenge/embryoio_level26', stdin=input, stdout=output)
+p.wait()
+output.flush()
+```
+cat /tmp/outfile for pass, vim into /tmp/hqjjqm 
+pwn.college{sX3bpTWBrnrcLBjsIm2ZsYF0QN2.QX2IDLwIzW}
+
 # Level27
+touch /tmp/infile & touch /tmp/temp
+```
+#!/usr/bin/python3
+import subprocess
+input = open('/tmp/infile')
+output = open('/tmp/adicfc', 'w')
+p = subprocess.Popen('/challenge/embryoio_level27', stdin=input, stdout=output)
+p.wait()
+input.flush()
+```
+pwn.college{oJ1PiNUd2BDT6vhciCxy9x75ipM.QX3IDLwIzW}
 
 # Level28
 vim script.py
@@ -194,8 +243,43 @@ subprocess.run(['env','-i','/challenge/embryoio_level28'])
 pwn.college{o1G4FrhipYdh7hDAVizPEhyltcQ.QX4IDLwIzW}
 
 # Level29
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
+void pwncollege() {
+	int pid = fork();
+	if(pid==0) {
+		static char *argv[] = {};
+		execv("/challenge/embryoio_level30", argv); // execv
+		exit(0);
+		//printf("This is the child process. My pid (child) is %d and my parent's id is %d.\n", getpid(), getppid());
+	}
+	else {
+		// wait
+		waitpid(pid,0,0);
+		//printf("This is the parent process. My pid (parent) is %d and my child's id is %d.\n", getpid(), pid);
+	}
+	
+	//char *args[2];
+	//args[0] = "/challenge/embryoio_level30";
+	//args[1] = NULL;
+	//args[2] = "./embryoio_level30";
+	//execv("/challenge/embryoio_level30", argv);
+	
+	return 0;
+}
 
+int main() {
+	pwncollege();
+	return 0;
+}
+```
+gcc script.c -o script
+pwn.college{g3RWtbOkGMejYkWTMDwC0EtpNQ1.QXwMDLwIzW}
 
 
 
