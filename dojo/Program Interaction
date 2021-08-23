@@ -135,10 +135,65 @@ subprocess.run('/challenge/embryoio_level18')
 pwn.college{comqGZGca4BR_eglRB7pXiTl1mp.QX4EDLwIzW}
 
 # Level19
+# Level20
+
+# Level21
+ipython
+```
+import subprocess
+subprocess.run(['env','-i','/challenge/embryoio_level21'])
+```
+pwn.college{MgvMMFcWKom6GwwtU07eBQcb8FK.QXxIDLwIzW}
+
+# Level22
+vim /tmp/script.py
+```
+#!/usr/bin/python3
+import subprocess
+subprocess.run('/challenge/embryoio_level22')
+```
+pwn.college{UjT6drRpUKGxWnO3jgm6te5HBdK.QXyIDLwIzW}
+
+# Level23
+vim script.py
+#!/usr/bin/python3
+import subprocess
+subprocess.run('/challenge/embryoio_level23')
+pwn.college{0LyjLazZXojZTbtxBPTjs4uTOw3.QXzIDLwIzW}
+
+# Level24
+vim script.py
+```
+#!/usr/bin/python3
+import subprocess
+subprocess.run(['/challenge/embryoio_level24','lbsgkucdxq'])
+```
+pwn.college{wNPk12Rcaoai8wobK0J8tHf3R-V.QX0IDLwIzW}
+
+# Level25
+vim script.py
+```
+#!/usr/bin/python3
+import subprocess
+subprocess.run('/challenge/embryoio_level25')
+```
+export kufmnq='lgjqbknjmd'
+pwn.college{oephMtoMrXgB8SxvV7sAh7-wIMT.QX1IDLwIzW}
 
 
+# Level26
+# Level27
 
+# Level28
+vim script.py
+```
+#!/usr/bin/python3
+import subprocess
+subprocess.run(['env','-i','/challenge/embryoio_level28'])
+```
+pwn.college{o1G4FrhipYdh7hDAVizPEhyltcQ.QX4IDLwIzW}
 
+# Level29
 
 
 
