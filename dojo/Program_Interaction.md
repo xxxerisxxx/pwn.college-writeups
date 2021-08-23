@@ -460,6 +460,22 @@ ps2 = subprocess.run("/usr/bin/cat", stdin=ps.stdout)
 ```
 pwn.college{IwJD4C7UCNwxonfb-_zes4fFtiq.QX4QDLwIzW}
 
+# Level49
+``` ps2 = subprocess.run(["/usr/bin/grep", "pwn"], stdin=ps.stdout) ```
+pwn.college{Iby0Vlz79TKJc6CJAUD74vP26T8.QX5QDLwIzW}
+
+# Level50
+``` ps2 = subprocess.run(["/usr/bin/sed", "s/1/1/"], stdin=ps.stdout) ```
+pwn.college{8IGZ9bTC8gJFzVw4w7uJ3k0Hcah.QXwUDLwIzW}
+
+# Level51
+``` ps2 = subprocess.run("/usr/bin/rev", stdin=ps.stdout) ```
+rev password
+pwn.college{AxhhwjUkSktu3LnCv5Eom1wip_m.QXxUDLwIzW}
+
+# Level52
+
+
 # Level 54
 ```
 #!/usr/bin/python3
