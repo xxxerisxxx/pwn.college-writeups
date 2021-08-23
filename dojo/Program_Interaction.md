@@ -74,9 +74,6 @@ touch /tmp/script.sh
 chmod +x /tmp/script.sh
 ```
 #!/bin/bash
-/challenge/embryoio_level12
-```
-#!/bin/bash
 touch /tmp/ceitej
 /challenge/embryoio_level12 < /tmp/ceitej
 ```
@@ -152,6 +149,7 @@ ipython again
 pwn.college{A45KwcvUr2aVjgwDHUhWbxuWsbT.QX5EDLwIzW}
 
 ## Level20
+```
 import subprocess
 touch /tmp/temp & touch /temp/pazbjm
 input = open('/tmp/temp')
@@ -347,14 +345,43 @@ int main() {
 pwn.college{ALrXGldxZ3sXLRk2-rPlNo5vNBG.QXxMDLwIzW}
 
 ## Level32
+export kvoflp='ujxnfdfvql'
+```
+void pwncollege() {
+	static char *argv[] = {"/challenge/embryoio_level32", "alnmkjmuyd"};
 
+```
+pwn.college{crzjdnx-jjz2evRO-uyNulscUtG.QXyMDLwIzW}
 
+# Level33
+```
+void pwncollege() {
+	static char *argv[] = {"/challenge/embryoio_level33", "alnmkjmuyd"};
 
+```
+./script < /tmp/tsglvu
+vim the password
+pwn.college{MaAMe0iQVWjsnM04pwNwXPDEYA4.QXzMDLwIzW}
 
+# Level34
+```
+void pwncollege() {
+	static char *argv[] = {"/challenge/embryoio_level34", "alnmkjmuyd"};
 
+```
+./script > /tmp/uadoet
+cat /tmp/uadoet
+pwn.college{4O58Zk0XvsWjtJfAiD_6fNebnBm.QX0MDLwIzW}
 
+# Level35
+```
+void pwncollege() {
+	static char *argv[] = {"/challenge/embryoio_level35", "alnmkjmuyd"};
+```
+env -i ./script
+pwn.college{I3R5KIPQgzTMWlgFUTXDC3mlQGM.QX1MDLwIzW}
 
-
+# Level36
 
 
 
