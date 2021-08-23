@@ -125,6 +125,73 @@ subprocess.run(['/challenge/embryoio_level17', 'ervtvsjbyp'])
 ```
 pwn.college{I0OhP3N7FUsshmvYG_OgKQ5JTai.QX3EDLwIzW}
 
+# Level18
+export ydyfmp='qocstoljuy'
+ipython
+```
+import subprocess
+subprocess.run('/challenge/embryoio_level18')
+```
+pwn.college{comqGZGca4BR_eglRB7pXiTl1mp.QX4EDLwIzW}
+
+# Level19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
