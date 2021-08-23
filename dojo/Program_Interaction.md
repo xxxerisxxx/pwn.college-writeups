@@ -474,7 +474,18 @@ rev password
 pwn.college{AxhhwjUkSktu3LnCv5Eom1wip_m.QXxUDLwIzW}
 
 # Level52
+```
+ps = subprocess.Popen(["/challenge/embryoio_level52"], stdin=subprocess.PIPE)
+ps2 = subprocess.run("/usr/bin/cat", stdout=ps.stdin)
+```
+pwn.college{gAn_rj9UzPq1_2x_NMwcVuCpC5Z.QXyUDLwIzW}
 
+# Level53
+```
+ps = subprocess.Popen(["/challenge/embryoio_level53"], stdin=subprocess.PIPE)
+ps2 = subprocess.run("/usr/bin/rev", stdout=ps.stdin)
+```
+pwn.college{gML98PQs_AO2qAXMUKAVY5yYn-I.QXzUDLwIzW}
 
 # Level 54
 ```
