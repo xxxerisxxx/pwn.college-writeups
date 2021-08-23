@@ -403,32 +403,161 @@ rev /tmp/pwn
 pwn.college{M92atdQCwSQBJTrzk1wP8Parp7a.QX5MDLwIzW}
 
 # Level40
+cat | /challenge/embryoio_level40
+pwn.college{Ag9UhVgDwYiio2h2k5uZNw-C9l0.QXwQDLwIzW}
 
+# Level41
+rev | /challenge/embryoio_level41
+enter pass in REVERSED
+pwn.college{sFS1jCucp4tMn6FuJrxpvC-TaWx.QXxQDLwIzW}
 
+# Level42
+chmod +x script.sh
+```
+#!/bin/bash
+touch /tmp/tmp
+/challenge/embryoio_level42 | cat > /tmp/tmp
+cat /tmp/tmp
+```
+pwn.college{QBF0S7ud4nh1uKm2vgPKp4v0zPS.QXyQDLwIzW}
 
+# Level43
+```
+#!/bin/bash
+touch /tmp/tmp
+/challenge/embryoio_level43 | grep -P 'pwn' > /tmp/tmp
+cat /tmp/tmp
+```
+pwn.college{kOmQtlyMygdnSPhZQQRdD1qNrgs.QXzQDLwIzW}
 
+# Level44
+/challenge/embryoio_level44 | sed 's/1/1/'
+pwn.college{UkPFhQSflqNjDxcuk1BYSxmvaue.QX0QDLwIzW}
 
+# Level 45
+```
+#!/bin/bash
+touch /tmp/temp
+/challenge/embryoio_level45 | rev > /tmp/temp
+rev /tmp/temp
+```
+pwn.college{w9ASmuEhQ33xIPfgIVpHWFbzXbK.QX1QDLwIzW}
 
+# Level46
+cat | ./script.sh
+pass + CTRL+D
+pwn.college{QNE_DRJ3yWZZrRTobB85Zd4Fdf-.QX2QDLwIzW}
 
+# Level47
+rev | ./script.sh
+rev'd pass + CTRL+D
+pwn.college{EVJWulUM3JF_WtirSmYDLaiaZai.QX3QDLwIzW}
 
+# Level 54
+```
+#!/usr/bin/python3
+import subprocess
+import os
+ps = subprocess.Popen(["/challenge/embryoio_level54"], stdout=subprocess.PIPE)
+ps2 = subprocess.run("/usr/bin/cat", stdin=ps.stdout)
+```
+pwn.college{Uf1LZX4WGL88QTL8XyPUxJLBas4.QX0UDLwIzW}
 
+# Level55
+```
+ps2 = subprocess.run(["/usr/bin/grep", "pwn"], stdin=ps.stdout)
+```
+pwn.college{gus986CpeuAZDZasWSJ5pWZugvH.QX1UDLwIzW}
 
+# Level56
+'''
+ps2 = subprocess.run(["/usr/bin/sed", "s/1/1/"], stdin=ps.stdout)
+'''
+pwn.college{4rz5mnXmfwjPp2XGzjmHuNXNtBV.QX2UDLwIzW}
 
+# Level57
+```
+ps2 = subprocess.run("/usr/bin/rev", stdin=ps.stdout)
+```
+rev in terminal
+pwn.college{YlqEBdsnS2-ADmNnUHvjdKRnOuF.QX3UDLwIzW}
 
+# Level58
+'''
+#!/usr/bin/python3
+import subprocess
+import os
+ps = subprocess.Popen(["/challenge/embryoio_level58"], stdin=subprocess.PIPE)
+ps2 = subprocess.run("/usr/bin/cat", stdout=ps.stdin)
 
+'''
+pwn.college{wstxjsB0ScHeUxxJi22IQFIAbkE.QX4UDLwIzW}
 
+# Level59
+```
+s2 = subprocess.run("/usr/bin/rev", stdout=ps.stdin)
+```
+enter the pass REVERSED, Ctrl + D bc no EOF
+pwn.college{Ayi_-8b_elreUAGuvYvCW-irFy_.QX5UDLwIzW}
 
+# Level60
+```
+static char *argv[] ={NULL};
+execv("/challenge/embryoio_level60", argv);
+exit(127);
+```
+./script | cat
+pwn.college{kQ2VDmamf9Hl_q2AS85w9ypomow.QXwYDLwIzW}
 
+# Level61
+```
+static char *argv[] ={"/challenge/embryoio_level61"};
+execv(argv[0], argv);
+```
+./script | grep "pwn"
+pwn.college{UqFfUEqb6ERs9mtooOaxDxhq40F.QXxYDLwIzW}
 
+# Level62
+```
+static char *argv[] ={"/challenge/embryoio_level62"};
+```
+./script | sed 's/1/1/'
+pwn.college{85wycjSzzQkc_EZJ44ZkOAEPpu1.QXyYDLwIzW}
 
+# Level63
+```
+static char *argv[] ={"/challenge/embryoio_level63"};
+```
+./script | rev
+rev flag in terminal
+pwn.college{A8bTMhFkzt0_Jijh6z1Y_r9kMZx.QXzYDLwIzW}
 
+# Level64
+```
+static char *argv[] ={NULL};
+execv("/challenge/embryoio_level64", argv);
+```
+cat | ./script
+pwn.college{Y1eGbvtkzPtqsZ3zntvaLVcVMiS.QX0YDLwIzW}
 
+# Level65
+```
+static char *argv[] ={NULL};
+execv("/challenge/embryoio_level65", argv);
+```
+rev | ./script
+enter pass REVERSED
+pwn.college{QNyrBeVpYH07VW9XG5z2S6Hp1-2.QX1YDLwIzW}
 
+# Level66
+find . -exec /challenge/embryoio_level66 grep pwn {} +
+pwn.college{45sDgnh2htLkOCN98slDzNikqhL.QX2YDLwIzW}
 
+# Level67
+find . -exec /challenge/embryoio_level67 llcvvsdaar {} +
+pwn.college{MbM3GQgwR0GcGz8FExyNPdVVliX.QX3YDLwIzW}
 
-
-
-
+# Level68
 
 
 
