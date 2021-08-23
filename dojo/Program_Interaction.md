@@ -382,15 +382,27 @@ env -i ./script
 pwn.college{I3R5KIPQgzTMWlgFUTXDC3mlQGM.QX1MDLwIzW}
 
 # Level36
+touch /tmp/temp
+/challenge/embryoio_level36 | cat > /tmp/temp
+cat /tmp/temp
+pwn.college{IIiHjgK95i-Gqhz4Up_YxIbjLcK.QX2MDLwIzW}
 
+# Level37
+touch /tmp/tmp
+/challenge/embryoio_level37 | grep -P 'pwn' > /tmp/tmp
+cat /tmp/tmp
+pwn.college{INynvHnsH-KiK0BDZyMYCqpBkHv.QX3MDLwIzW}
 
+# Level38
+/challenge/embryoio_level38 | sed 's/1/2/'
+pwn.college{kukmlN4K-E3nEgFJaifmasFLBRn.QX4MDLwIzW}
 
+# Level39
+/challenge/embryoio_level39 | rev > /tmp/pwn
+rev /tmp/pwn
+pwn.college{M92atdQCwSQBJTrzk1wP8Parp7a.QX5MDLwIzW}
 
-
-
-
-
-
+# Level40
 
 
 
