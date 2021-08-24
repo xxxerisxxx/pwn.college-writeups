@@ -812,3 +812,30 @@ script.c
 pwn.college{8YM5aiDMVT_xb4ZjfOJKeXAogdk.QXzgDLwIzW}
 
 # Level84
+script* in ~
+script.c same as Level29
+touch dmkrwr
+./script < dmkrwr
+/tmp/mkfioi and cd
+~/script < dmkrwr
+pwn.college{8ZGAU3uNnMiZbddJDQohlS59vMF.QX0gDLwIzW}
+
+# Level85
+all scripts in ~
+mkdir /tmp/rcycul, stay in ~
+add chdir("/home/hacker") to script.c bf execv()
+pwn.college{sa8BDno8eD_-OD1sFXQXcXoUJRk.QX1gDLwIzW}
+
+# Level86
+```
+#!/bin/bash
+./embryo
+```
+> 4026
+pwn.college{062J_aBVJ5mhGw-Ce4tBDuCs2Dj.QX2gDLwIzW}
+
+# Level87
+run script.sh, do all the math calculations
+pwn.college{gKzXTonjAwEj4f59jXpf756VvwS.QX3gDLwIzW}
+
+
