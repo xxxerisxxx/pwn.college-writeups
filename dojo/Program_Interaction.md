@@ -353,7 +353,7 @@ void pwncollege() {
 ```
 pwn.college{crzjdnx-jjz2evRO-uyNulscUtG.QXyMDLwIzW}
 
-# Level33
+## Level33
 ```
 void pwncollege() {
 	static char *argv[] = {"/challenge/embryoio_level33", "alnmkjmuyd"};
@@ -363,7 +363,7 @@ void pwncollege() {
 vim the password
 pwn.college{MaAMe0iQVWjsnM04pwNwXPDEYA4.QXzMDLwIzW}
 
-# Level34
+## Level34
 ```
 void pwncollege() {
 	static char *argv[] = {"/challenge/embryoio_level34", "alnmkjmuyd"};
@@ -373,7 +373,7 @@ void pwncollege() {
 cat /tmp/uadoet
 pwn.college{4O58Zk0XvsWjtJfAiD_6fNebnBm.QX0MDLwIzW}
 
-# Level35
+## Level35
 ```
 void pwncollege() {
 	static char *argv[] = {"/challenge/embryoio_level35", "alnmkjmuyd"};
@@ -381,37 +381,37 @@ void pwncollege() {
 env -i ./script
 pwn.college{I3R5KIPQgzTMWlgFUTXDC3mlQGM.QX1MDLwIzW}
 
-# Level36
+## Level36
 touch /tmp/temp
 /challenge/embryoio_level36 | cat > /tmp/temp
 cat /tmp/temp
 pwn.college{IIiHjgK95i-Gqhz4Up_YxIbjLcK.QX2MDLwIzW}
 
-# Level37
+## Level37
 touch /tmp/tmp
 /challenge/embryoio_level37 | grep -P 'pwn' > /tmp/tmp
 cat /tmp/tmp
 pwn.college{INynvHnsH-KiK0BDZyMYCqpBkHv.QX3MDLwIzW}
 
-# Level38
+## Level38
 /challenge/embryoio_level38 | sed 's/1/2/'
 pwn.college{kukmlN4K-E3nEgFJaifmasFLBRn.QX4MDLwIzW}
 
-# Level39
+## Level39
 /challenge/embryoio_level39 | rev > /tmp/pwn
 rev /tmp/pwn
 pwn.college{M92atdQCwSQBJTrzk1wP8Parp7a.QX5MDLwIzW}
 
-# Level40
+## Level40
 cat | /challenge/embryoio_level40
 pwn.college{Ag9UhVgDwYiio2h2k5uZNw-C9l0.QXwQDLwIzW}
 
-# Level41
+## Level41
 rev | /challenge/embryoio_level41
 enter pass in REVERSED
 pwn.college{sFS1jCucp4tMn6FuJrxpvC-TaWx.QXxQDLwIzW}
 
-# Level42
+## Level42
 chmod +x script.sh
 ```
 #!/bin/bash
@@ -421,7 +421,7 @@ cat /tmp/tmp
 ```
 pwn.college{QBF0S7ud4nh1uKm2vgPKp4v0zPS.QXyQDLwIzW}
 
-# Level43
+## Level43
 ```
 #!/bin/bash
 touch /tmp/tmp
@@ -430,11 +430,11 @@ cat /tmp/tmp
 ```
 pwn.college{kOmQtlyMygdnSPhZQQRdD1qNrgs.QXzQDLwIzW}
 
-# Level44
+## Level44
 /challenge/embryoio_level44 | sed 's/1/1/'
 pwn.college{UkPFhQSflqNjDxcuk1BYSxmvaue.QX0QDLwIzW}
 
-# Level 45
+## Level 45
 ```
 #!/bin/bash
 touch /tmp/temp
@@ -443,51 +443,51 @@ rev /tmp/temp
 ```
 pwn.college{w9ASmuEhQ33xIPfgIVpHWFbzXbK.QX1QDLwIzW}
 
-# Level46
+## Level46
 cat | ./script.sh
 pass + CTRL+D
 pwn.college{QNE_DRJ3yWZZrRTobB85Zd4Fdf-.QX2QDLwIzW}
 
-# Level47
+## Level47
 rev | ./script.sh
 rev'd pass + CTRL+D
 pwn.college{EVJWulUM3JF_WtirSmYDLaiaZai.QX3QDLwIzW}
 
-# Level48
+## Level48
 ```
 ps = subprocess.Popen(["/challenge/embryoio_level48"], stdout=subprocess.PIPE)
 ps2 = subprocess.run("/usr/bin/cat", stdin=ps.stdout)
 ```
 pwn.college{IwJD4C7UCNwxonfb-_zes4fFtiq.QX4QDLwIzW}
 
-# Level49
+## Level49
 ``` ps2 = subprocess.run(["/usr/bin/grep", "pwn"], stdin=ps.stdout) ```
 pwn.college{Iby0Vlz79TKJc6CJAUD74vP26T8.QX5QDLwIzW}
 
-# Level50
+## Level50
 ``` ps2 = subprocess.run(["/usr/bin/sed", "s/1/1/"], stdin=ps.stdout) ```
 pwn.college{8IGZ9bTC8gJFzVw4w7uJ3k0Hcah.QXwUDLwIzW}
 
-# Level51
+## Level51
 ``` ps2 = subprocess.run("/usr/bin/rev", stdin=ps.stdout) ```
 rev password
 pwn.college{AxhhwjUkSktu3LnCv5Eom1wip_m.QXxUDLwIzW}
 
-# Level52
+## Level52
 ```
 ps = subprocess.Popen(["/challenge/embryoio_level52"], stdin=subprocess.PIPE)
 ps2 = subprocess.run("/usr/bin/cat", stdout=ps.stdin)
 ```
 pwn.college{gAn_rj9UzPq1_2x_NMwcVuCpC5Z.QXyUDLwIzW}
 
-# Level53
+## Level53
 ```
 ps = subprocess.Popen(["/challenge/embryoio_level53"], stdin=subprocess.PIPE)
 ps2 = subprocess.run("/usr/bin/rev", stdout=ps.stdin)
 ```
 pwn.college{gML98PQs_AO2qAXMUKAVY5yYn-I.QXzUDLwIzW}
 
-# Level 54
+## Level 54
 ```
 #!/usr/bin/python3
 import subprocess
@@ -497,26 +497,26 @@ ps2 = subprocess.run("/usr/bin/cat", stdin=ps.stdout)
 ```
 pwn.college{Uf1LZX4WGL88QTL8XyPUxJLBas4.QX0UDLwIzW}
 
-# Level55
+## Level55
 ```
 ps2 = subprocess.run(["/usr/bin/grep", "pwn"], stdin=ps.stdout)
 ```
 pwn.college{gus986CpeuAZDZasWSJ5pWZugvH.QX1UDLwIzW}
 
-# Level56
+## Level56
 '''
 ps2 = subprocess.run(["/usr/bin/sed", "s/1/1/"], stdin=ps.stdout)
 '''
 pwn.college{4rz5mnXmfwjPp2XGzjmHuNXNtBV.QX2UDLwIzW}
 
-# Level57
+## Level57
 ```
 ps2 = subprocess.run("/usr/bin/rev", stdin=ps.stdout)
 ```
 rev in terminal
 pwn.college{YlqEBdsnS2-ADmNnUHvjdKRnOuF.QX3UDLwIzW}
 
-# Level58
+## Level58
 '''
 #!/usr/bin/python3
 import subprocess
@@ -527,14 +527,14 @@ ps2 = subprocess.run("/usr/bin/cat", stdout=ps.stdin)
 '''
 pwn.college{wstxjsB0ScHeUxxJi22IQFIAbkE.QX4UDLwIzW}
 
-# Level59
+## Level59
 ```
 s2 = subprocess.run("/usr/bin/rev", stdout=ps.stdin)
 ```
 enter the pass REVERSED, Ctrl + D bc no EOF
 pwn.college{Ayi_-8b_elreUAGuvYvCW-irFy_.QX5UDLwIzW}
 
-# Level60
+## Level60
 ```
 static char *argv[] ={NULL};
 execv("/challenge/embryoio_level60", argv);
@@ -543,7 +543,7 @@ exit(127);
 ./script | cat
 pwn.college{kQ2VDmamf9Hl_q2AS85w9ypomow.QXwYDLwIzW}
 
-# Level61
+## Level61
 ```
 static char *argv[] ={"/challenge/embryoio_level61"};
 execv(argv[0], argv);
@@ -551,14 +551,14 @@ execv(argv[0], argv);
 ./script | grep "pwn"
 pwn.college{UqFfUEqb6ERs9mtooOaxDxhq40F.QXxYDLwIzW}
 
-# Level62
+## Level62
 ```
 static char *argv[] ={"/challenge/embryoio_level62"};
 ```
 ./script | sed 's/1/1/'
 pwn.college{85wycjSzzQkc_EZJ44ZkOAEPpu1.QXyYDLwIzW}
 
-# Level63
+## Level63
 ```
 static char *argv[] ={"/challenge/embryoio_level63"};
 ```
@@ -566,7 +566,7 @@ static char *argv[] ={"/challenge/embryoio_level63"};
 rev flag in terminal
 pwn.college{A8bTMhFkzt0_Jijh6z1Y_r9kMZx.QXzYDLwIzW}
 
-# Level64
+## Level64
 ```
 static char *argv[] ={NULL};
 execv("/challenge/embryoio_level64", argv);
@@ -574,7 +574,7 @@ execv("/challenge/embryoio_level64", argv);
 cat | ./script
 pwn.college{Y1eGbvtkzPtqsZ3zntvaLVcVMiS.QX0YDLwIzW}
 
-# Level65
+## Level65
 ```
 static char *argv[] ={NULL};
 execv("/challenge/embryoio_level65", argv);
@@ -583,15 +583,15 @@ rev | ./script
 enter pass REVERSED
 pwn.college{QNyrBeVpYH07VW9XG5z2S6Hp1-2.QX1YDLwIzW}
 
-# Level66
+## Level66
 find . -exec /challenge/embryoio_level66 grep pwn {} +
 pwn.college{45sDgnh2htLkOCN98slDzNikqhL.QX2YDLwIzW}
 
-# Level67
+## Level67
 find . -exec /challenge/embryoio_level67 llcvvsdaar {} +
 pwn.college{MbM3GQgwR0GcGz8FExyNPdVVliX.QX3YDLwIzW}
 
-# Level68
+## Level68
 script.sh
 Error: argv[334] needs an argument basically
 ```
@@ -608,7 +608,7 @@ for x in range(1, 334):
 ./script.sh
 pwn.college{gvFAbhBWJakXZfgVycjihXbtz1I.QX4YDLwIzW}
 
-# Level69 (this is the argc==0 one)
+## Level69 (this is the argc==0 one)
 scriptt.c
 ```
 #include <stdlib.h>
@@ -628,14 +628,14 @@ bash script.sh
 pwn.college{8KoXOkUNWBUHqudJn9ZgBiQS_EC.QX5YDLwIzW}
 
 
-# Level70 (this is the export an int 52 as env var)
+## Level70 (this is the export an int 52 as env var)
 ```
 #!/bin/bash
 env -i 91=mhydcewfty /challenge/embryoio_level70
 ```
 pwn.college{cJGZJWl9NZAkJVc4xfIktGVINrM.QXwcDLwIzW}
 
-# Level71
+## Level71
 script.sh
 ``` 
 #!/bin/bash
@@ -643,7 +643,7 @@ env -i 89=topoytdywx /challenge/embryoio_level71 {1..49} ioabpqirar
 ```
 pwn.college{8h7pP9x_J2_i2uwzvF4yj1FP-Wo.QXxcDLwIzW}
 
-# Level72
+## Level72
 mkdir /tmp/ojuhsr & cd /tmp/ojuhsr
 ```
 #!/bin/bash
@@ -652,7 +652,7 @@ touch nabroh
 ```
 pwn.college{cKMQCvD8rmqGNZe61WJL-4PLl5w.QXycDLwIzW}
 
-# Level73 (working directory should be different than the parent process)
+## Level73 (working directory should be different than the parent process)
 mkdir /tmp/driqoc
 script.sh
 ``` 
@@ -679,7 +679,7 @@ everything needs to be in home dir
 ./script.sh
 pwn.college{EbNl9byym_JGzkQOhoE0MuxVJrB.QXzcDLwIzW}
 
-# Level74
+## Level74
 ```
 import subprocess
 subprocess.run(['/challenge/embryoio_level74', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '102', '103', '104', '105', '106', '107', '108', '109', '110', '111', '112', '113', '114', '115', 'xkxnlfngaa'])
@@ -687,7 +687,7 @@ subprocess.run(['/challenge/embryoio_level74', '1', '2', '3', '4', '5', '6', '7'
 python3 script.py
 pwn.college{8IMpUrHKuUn6gj0J7aGLVoL4WXd.QX0cDLwIzW}
 
-# Level75
+## Level75
 script.c
 ```
 static char *argv[] = {};
@@ -701,7 +701,7 @@ subprocess.run("./script")
 python3 script.py
 pwn.college{U1cxoo8wi9FtMlzHGii--AXfLFi.QX1cDLwIzW}
 
-# Level76
+## Level76
 env -i python3 script.py
 ```
 os.environ["245"]="rnvmemersd"
@@ -709,7 +709,7 @@ subprocess.run("/challenge/embryoio_level76")
 ```
 pwn.college{sOF_-e-nQdeG910IshUO4oeRH1V.QX2cDLwIzW}
 
-# Level77
+## Level77
 env -i python3 script.py (used vim search and repalce in code: Ex. :s/foo/bar/g)
 ```
 #!/usr/bin/python3
@@ -720,7 +720,7 @@ subprocess.run(['/challenge/embryoio_level77', '1', '2', '3', '4', '5', '6', '7'
 ```
 pwn.college{cc8lAWRg870HhSY1CUhd4Ut5ICR.QX3cDLwIzW}
 
-# Level78
+## Level78
 mkdir /tmp/ospraw & cd /tmp/ospraw
 touch kbxqxy
 cp ~/script.py .
@@ -732,7 +732,7 @@ subprocess.run("/challenge/embryoio_level78")
 ```
 pwn.college{QCLuPr2BPeKQBXnuuN38Lf2MCNn.QX4cDLwIzW}
 
-# Level79
+## Level79
 mkdir /tmp/aqgojq
 script.py
 ```
@@ -764,7 +764,51 @@ all files must be in ~
 python3 script.py
 pwn.college{QMXuYHFIbJ1ssLL1roymjDZbcEG.QX5cDLwIzW}
 
-# Level80
+# For all the 80s, created "embryo" symlink to make scripting easier
+## Level80
 ln -s /challenge/embryoio_level80 embryo
+```
+	int pid = fork();
+	if(pid==0) {
+	static char *argv[] = {"embryo", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "bcjujdsezh"}; //symlink
+	static char *envp[] = {"/bin", (char*)0};
+	execve(argv[0], argv, envp); // exec path to execute
+	printf("made it here");
+	exit(127);
+```
+pwn.college{MQN8xKAzPwxYlLwKjDz-6QeWiMx.QXwgDLwIzW}
 
+## Level81
+```
+static char *argv[] = {};
+execv("embryo", argv);
+exit(127);
+```
+pwn.college{YPaoXtS3vpA8I2UnoI4pqWT1mwf.QXxgDLwIzW}
 
+## Level82
+```
+#!/bin/bash
+env -i 271=qoiasmgute ./script
+```
+pwn.college{Eihs0CltQH71rZAxdmh8rDikNKW.QXygDLwIzW}
+
+## Level83
+script.c
+```
+		int pid = fork();
+		if(pid==0) {
+		static char *argv[] = {"embryo", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "270", "271", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "283", "284", "285", "286", "287", "288", "289", "290", "291", "292", "293", "294", "295", "296", "297", "298", "299", "300", "301", "302", "303", "304", "305", "306", "307", "308", "309", "310", "311", "312", "313", "314", "315", "316", "317", "lmuuituqtn"}; //symlink
+		static char *envp[] = 
+		{
+			"297=odtfhrheil",
+			0
+		};
+		execve(argv[0], &argv[0], envp); // exec path to execute
+		//execv("embryo", argv);
+		waitpid(pid,0,0);
+		exit(127);
+```
+pwn.college{8YM5aiDMVT_xb4ZjfOJKeXAogdk.QXzgDLwIzW}
+
+# Level84
