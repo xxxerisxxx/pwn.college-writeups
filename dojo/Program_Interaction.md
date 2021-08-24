@@ -764,3 +764,7 @@ all files must be in ~
 python3 script.py
 pwn.college{QMXuYHFIbJ1ssLL1roymjDZbcEG.QX5cDLwIzW}
 
+# Level80
+ln -s /challenge/embryoio_level80 embryo
+
+
