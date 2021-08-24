@@ -6,3 +6,8 @@ readelf -a /challenge/embryoio_level3 | grep interpret
 ln -s /link/to/binary slink_nickname
 
 Lvl68 alternative: ```./script.sh foo{1..334} nbtdcccras```
+
+### Vim
+yy //yank(copy)
+p //paste
+all in visual mode
