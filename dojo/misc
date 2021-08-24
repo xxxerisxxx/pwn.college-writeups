@@ -1,9 +1,4 @@
 readelf -a /challenge/embryoio_level3 | grep interpret
 /lib64/ld-linux-x86-64.so.2 /challenge/embryoio_level3 flag
 
-## Skip
-40
-41
-46
-47
-48
+Lvl68 alternative: ./script.sh foo{1..334} nbtdcccras
