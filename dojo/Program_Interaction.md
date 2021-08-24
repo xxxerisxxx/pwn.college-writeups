@@ -592,10 +592,18 @@ find . -exec /challenge/embryoio_level67 llcvvsdaar {} +
 pwn.college{MbM3GQgwR0GcGz8FExyNPdVVliX.QX3YDLwIzW}
 
 # Level68
+script.sh
+```
 #!/bin/bash
-#nbtdcccras
-ARGV$334=
 /challenge/embryoio_level68
+```
+script.py
+```
+#!/usr/bin/python3
+#nbtdcccras
+for x in range(1, 334):
+    print(str(x) + " ", end="")
+```
 
 # Level69
 #!/bin/bash
@@ -604,8 +612,21 @@ $0="$@"
 echo $0
 /challenge/embryoio_level69
 
+# Level70
+```
+#!/bin/bash
+#ARGC="$@"
+#$0="$@" 
+#echo $0
+#declare -x 52='dvhlemwtfx'
+x='dvhlemwtfx'
+y='52'
+echo $x $y
+export $y=$x
+/challenge/embryoio_level70
+```
 
-
+# Level71
 
 
 
