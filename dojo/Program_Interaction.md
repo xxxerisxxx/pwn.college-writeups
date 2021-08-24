@@ -636,9 +636,6 @@ env -i 91=mhydcewfty /challenge/embryoio_level70
 pwn.college{cJGZJWl9NZAkJVc4xfIktGVINrM.QXwcDLwIzW}
 
 # Level71
-
-
-# Level72
 script.sh
 ``` 
 #!/bin/bash
@@ -646,7 +643,7 @@ env -i 89=topoytdywx /challenge/embryoio_level71 {1..49} ioabpqirar
 ```
 pwn.college{8h7pP9x_J2_i2uwzvF4yj1FP-Wo.QXxcDLwIzW}
 
-# Level73
+# Level72
 mkdir /tmp/ojuhsr & scd /tmp/ojuhsr
 ```
 #!/bin/bash
@@ -655,7 +652,7 @@ touch nabroh
 ```
 pwn.college{cKMQCvD8rmqGNZe61WJL-4PLl5w.QXycDLwIzW}
 
-# Level74 (working directory should be different than the parent process)
+# Level73 (working directory should be different than the parent process)
 mkdir /tmp/driqoc
 script.sh
 ``` 
