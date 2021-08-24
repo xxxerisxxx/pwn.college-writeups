@@ -608,7 +608,7 @@ for x in range(1, 334):
 ./script.sh
 pwn.college{gvFAbhBWJakXZfgVycjihXbtz1I.QX4YDLwIzW}
 
-# Level69
+# Level69 (this is the argv==0 one)
 #!/bin/bash
 #ARGC="$@"
 $0="$@" 
@@ -616,7 +616,7 @@ echo $0
 /challenge/embryoio_level69
 
 
-# Level70
+# Level70 (this is the export an int 52 as env var)
 ```
 #!/bin/bash
 #ARGC="$@"
