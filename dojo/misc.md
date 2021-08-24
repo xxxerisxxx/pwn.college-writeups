@@ -10,11 +10,14 @@ Lvl68 alternative: ```./script.sh foo{1..334} nbtdcccras```
 ### Vim
 yy //yank(copy)
 p //paste
-all in visual mode
+^ all in visual mode
+:s/foo/bar/g //search foo, rplace w/ bar
 
 Beef Stroganoff //Russian
 
 My current working directory is incorrect! It should be '/tmp/driqoc', but it is '/home/hacker'.
 
-My argv[116] should have a value of xkxnlfngaa
+argv[247] should have a value of jiyiggsgfo
+
+*you CANNOT mkdir /tmp/dir & cd /tmp/dir in the same line; has to be 2 separate lines >:P
 
