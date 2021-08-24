@@ -34,8 +34,12 @@ My argv[268] should have a value of bcjujdsezh
 
 LVL80 hint: 
 argv[0] is passed into the execve() system call *separately* from the program path to execute.")
+
 print("[HINT] This means that it does not have to be the same as the program path, and that you can actually")
+
 print("[HINT] control it. This is done differently for different methods of execution. For example, in C, you")
+
 print("[HINT] simply need to pass in a different argv[0]. Bash has several ways to do it, but one way is to")
+
 print("[HINT] use a combination of a symbolic link (e.g., the `ln -s` command) and the PATH environment variable
 
