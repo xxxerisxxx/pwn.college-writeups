@@ -13,3 +13,8 @@ p //paste
 all in visual mode
 
 Beef Stroganoff //Russian
+
+My current working directory is incorrect! It should be '/tmp/driqoc', but it is '/home/hacker'.
+
+My argv[116] should have a value of xkxnlfngaa
+
