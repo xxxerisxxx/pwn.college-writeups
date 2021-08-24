@@ -609,33 +609,78 @@ for x in range(1, 334):
 pwn.college{gvFAbhBWJakXZfgVycjihXbtz1I.QX4YDLwIzW}
 
 # Level69 (this is the argv==0 one)
-#!/bin/bash
-#ARGC="$@"
-$0="$@" 
-echo $0
-/challenge/embryoio_level69
+scriptt.c
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+
+int main() {
+	execv("/challenge/embryoio_level69", NULL);
+	return 0;
+}
+```
+script.sh
+``` ./scriptt```
+bash script.sh
+pwn.college{8KoXOkUNWBUHqudJn9ZgBiQS_EC.QX5YDLwIzW}
 
 
 # Level70 (this is the export an int 52 as env var)
 ```
 #!/bin/bash
-#ARGC="$@"
-#$0="$@" 
-#echo $0
-#declare -x 52='dvhlemwtfx'
-x='dvhlemwtfx'
-y='52'
-echo $x $y
-export $y=$x
-/challenge/embryoio_level70
+env -i 91=mhydcewfty /challenge/embryoio_level70
 ```
+pwn.college{cJGZJWl9NZAkJVc4xfIktGVINrM.QXwcDLwIzW}
 
 # Level71
 
 
+# Level72
+script.sh
+``` 
+#!/bin/bash
+env -i 89=topoytdywx /challenge/embryoio_level71 {1..49} ioabpqirar 
+```
+pwn.college{8h7pP9x_J2_i2uwzvF4yj1FP-Wo.QXxcDLwIzW}
 
+# Level73
+mkdir /tmp/ojuhsr & scd /tmp/ojuhsr
+```
+#!/bin/bash
+touch nabroh
+/challenge/embryoio_level72 < nabroh
+```
+pwn.college{cKMQCvD8rmqGNZe61WJL-4PLl5w.QXycDLwIzW}
 
+# Level74 (working directory should be different than the parent process)
+mkdir /tmp/driqoc
+script.sh
+``` 
+#!/bin/bash
+./script 
+```
 
+script.c
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
+void pwncollege() {
+//int pid = fork();
+//	if(pid==0) {
+	static char *argv[] = {};
+	chdir("/tmp/driqoc");
+	execv("/challenge/embryoio_level73", argv);	
+}
+```
+everything needs to be in home dir
+./script.sh
+pwn.college{EbNl9byym_JGzkQOhoE0MuxVJrB.QXzcDLwIzW}
 
-
+# Level74
