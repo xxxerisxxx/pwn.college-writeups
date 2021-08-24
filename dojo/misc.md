@@ -11,3 +11,5 @@ Lvl68 alternative: ```./script.sh foo{1..334} nbtdcccras```
 yy //yank(copy)
 p //paste
 all in visual mode
+
+Beef Stroganoff //Russian
