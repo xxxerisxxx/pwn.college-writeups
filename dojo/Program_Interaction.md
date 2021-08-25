@@ -831,7 +831,7 @@ pwn.college{sa8BDno8eD_-OD1sFXQXcXoUJRk.QX1gDLwIzW}
 #!/bin/bash
 ./embryo
 ```
-> 4026
+4026
 pwn.college{062J_aBVJ5mhGw-Ce4tBDuCs2Dj.QX2gDLwIzW}
 
 # Level87
