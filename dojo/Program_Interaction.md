@@ -838,4 +838,23 @@ pwn.college{062J_aBVJ5mhGw-Ce4tBDuCs2Dj.QX2gDLwIzW}
 run script.sh, do all the math calculations
 pwn.college{gKzXTonjAwEj4f59jXpf756VvwS.QX3gDLwIzW}
 
+# Level88
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
+void pwncollege() {
+	static char *argv[] = {"/challenge/embryoio_level88", NULL};
+	static char *envp[] = {"/bin/bash", (char *)0};
+	execve(argv[0], argv, envp);	
+}
+
+int main() {
+	pwncollege();
+	return 0;
+}
+```
+argv[0] is not '/tmp/wbwhcp' (it seems to be '/challenge/embryoio_level88', instead)
