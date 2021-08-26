@@ -113,6 +113,21 @@ all:
 make
 pwn.college{gCE3UO5i2nNP-u0o2K6emjDklBS.0FO2EDLwIzW}
 
+## Level29
+/bin/stdbuf -oL cat /flag
+pwn.college{owg4pDD35L-r8zJxvS-zwTxQNjc.0VM3EDLwIzW}
+
+## Level30
+/bin/setarch -R cat /flag
+pwn.college{wZAYkQR8zu7woR2jzsKUtU6GyOl.0lM3EDLwIzW}
+
+## Level31
+/bin/watch -x cat /flag
+pwn.college{s_KsBziJ7p3SxX5Wwt3VoGsharH.01M3EDLwIzW}
+
+## Level32
+
+
 ## Level34
 /bin/awk '{ print $1 }' /flag
 pwn.college{glq7ddgzpKyML8RqyDV4a7hgJQC.0lN3EDLwIzW}
