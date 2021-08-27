@@ -871,6 +871,19 @@ Term2:
 echo todoikav > /tmp/pwn
 pwn.college{soIGXW8_zRPJhFZf-ljh788G1-k.QXwkDLwIzW}
 
+## Level91
+Term1:
+./script.sh
+```
+#!/bin/bash
+rm -r /tmp/tmp
+mkfifo /tmp/tmp
+/challenge/$HOSTNAME > /tmp/tmp
+```
+Term2:
+cat /tmp/tmp
+pwn.college{k6yvDp4tVlI_UnMvE-Cl-IDf9F_.QXxkDLwIzW}
+
 ## Level92
 Term1:
 ./script.sh
@@ -885,3 +898,17 @@ mkfifo /tmp/test2
 Term2:
 echo bdjfsvxb > /tmp/test
 pwn.college{Avr9q9vKyj7aaX5fcp1x9Nop_uV.QXykDLwIzW}
+
+## Level95
+./script.sh
+```
+#!/bin/bash
+/challenge/$HOSTNAME
+```
+pwn.college{EA61q5ts7NUMcnuu6WwhfFEytvh.QX1kDLwIzW}
+
+## Level96
+same script.sh from 95
+pwn.college{QQL7MedoCzL3pALPIfQz6s1ltDL.QX2kDLwIzW}
+
+## Level
