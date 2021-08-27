@@ -847,9 +847,11 @@ pwn.college{gKzXTonjAwEj4f59jXpf756VvwS.QX3gDLwIzW}
 #include <sys/types.h>
 
 void pwncollege() {
-	static char *argv[] = {"/challenge/embryoio_level88", NULL};
-	static char *envp[] = {"/bin/bash", (char *)0};
-	execve(argv[0], argv, envp);	
+	static char *args[] = {"/tmp/eaiccr", "embryo", (char *)0};
+	static char *envp[] = { (char *)0 };
+	execve(args[1], args, envp);
+	printf("ERROR");	
+	//execv(argv[0], argv);
 }
 
 int main() {
@@ -857,7 +859,13 @@ int main() {
 	return 0;
 }
 ```
-argv[0] is not '/tmp/wbwhcp' (it seems to be '/challenge/embryoio_level88', instead)
+./script.sh
+pwn.college{UFFprxS2BH027n1hLtaBOXGkqfS.QX4gDLwIzW}
+
+## level89
+same script.c as 88
+./script.sh
+pwn.college{gkLc6-Wez18H7s8ElVtrRSmaZQM.QX5gDLwIzW}
 
 ## Level90
 Term1:
@@ -911,4 +919,7 @@ pwn.college{EA61q5ts7NUMcnuu6WwhfFEytvh.QX1kDLwIzW}
 same script.sh from 95
 pwn.college{QQL7MedoCzL3pALPIfQz6s1ltDL.QX2kDLwIzW}
 
-## Level
+## Level02
+same script.c as late 89
+subprocess in script.py as "./script"
+pwn.college{o5jcnlU0E85JwbqrSiPIcZx78xu.0lMwEDLwIzW}
