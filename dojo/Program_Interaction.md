@@ -858,3 +858,30 @@ int main() {
 }
 ```
 argv[0] is not '/tmp/wbwhcp' (it seems to be '/challenge/embryoio_level88', instead)
+
+## Level90
+Term1:
+./script.sh
+```
+#!/bin/bash
+mkfifo /tmp/pwn
+/challenge/$HOSTNAME < /tmp/pwn
+```
+Term2:
+echo todoikav > /tmp/pwn
+pwn.college{soIGXW8_zRPJhFZf-ljh788G1-k.QXwkDLwIzW}
+
+## Level92
+Term1:
+./script.sh
+```
+#!/bin/bash
+mkfifo /tmp/test
+mkfifo /tmp/test2
+
+/challenge/$HOSTNAME < /tmp/test > /tmp/test2
+
+```
+Term2:
+echo bdjfsvxb > /tmp/test
+pwn.college{Avr9q9vKyj7aaX5fcp1x9Nop_uV.QXykDLwIzW}
