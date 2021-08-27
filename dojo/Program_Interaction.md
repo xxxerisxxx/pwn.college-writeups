@@ -919,6 +919,20 @@ pwn.college{EA61q5ts7NUMcnuu6WwhfFEytvh.QX1kDLwIzW}
 same script.sh from 95
 pwn.college{QQL7MedoCzL3pALPIfQz6s1ltDL.QX2kDLwIzW}
 
+## Level99
+same script.c and script.py as 101
+math
+pwn.college{85iTooz_SxQ_qCpEhQ0cqpFubt0.QX5kDLwIzW}
+
+## Level100
+same as 99
+pwn.college{UdDVto3n0uclA5lXBO3X3BAgLlt.0FMwEDLwIzW}
+
+## Level101
+same script.c as late 89
+same script.py as 102
+pwn.college{0A_8EG8bo0Hxe-neIZlQ4_roQRt.0VMwEDLwIzW}
+
 ## Level02
 same script.c as late 89
 subprocess in script.py as "./script"
