@@ -927,6 +927,7 @@ pwn.college{gwJNgw3FMPoydd8qNGn7TTdQXeX.QXzkDLwIzW}
 #!/bin/bash
 /challenge/$HOSTNAME exec 82<> /tmp/pwn
 ```
+put password in /tmp/pwn
 pwn.college{ESaMhc9cN79KJHbRZb5ByqqN_0n.QX0kDLwIzW}
 
 ## Level95
@@ -978,4 +979,152 @@ subprocess in script.py as "./script"
 pwn.college{o5jcnlU0E85JwbqrSiPIcZx78xu.0lMwEDLwIzW}
 
 ## Level103
+Term1:
+script.py
+``` p = subprocess.run('/challenge/embryoio_level103') ```
+mkfifo /tmp/pwn
+
+Term2:
+echo password > /tmp/pwn
+pwn.college{E7PT2mu5g6cV6n1Myu28_pU9Le0.01MwEDLwIzW}
+
+## Level104
+Term1:
+script.py is just running subprocess
+python3 script.py > /tmp/test1
+
+Term2:
+cat < /tmp/test1
+pwn.college{wamTtUZjsPwjSwCb9cNjBnoEfxV.0FNwEDLwIzW}
+
+## Level105
+Term1:
+script.py running subprocess
+python3 script.py < /tmp/test1 > /tmp/test2
+
+Term2:
+echo kfpnbdsa > /tmp/test1
+cat /tmp/test2
+pwn.college{4ojZ_J1FmDNucxWE6PwEn0VxeHO.0VNwEDLwIzW}
+
+## Level110 
+kill -s SIGHUP 108
+pwn.college{Y4rU8xojyTHCSOlAOUFQsoi11gF.0FMxEDLwIzW}
+
+## Level111
+hacker@embryoio_level111:~$ kill -s SIGINT 104
+hacker@embryoio_level111:~$ kill -s SIGUSR1 104
+hacker@embryoio_level111:~$ kill -s SIGHUP 104
+hacker@embryoio_level111:~$ kill -s SIGUSR1 104
+hacker@embryoio_level111:~$ kill -s SIGINT 104
+pwn.college{YGHAkitJa8Nl2cJSXJyEt09A6d2.0VMxEDLwIzW}
+
+## Level112
+Same c script as level 30
+pwn.college{UdjW3mHCQeayh_mikUc1thhp5un.0lMxEDLwIzW}
+
+## Level113
+math
+pwn.college{k2Ao9Jj1QQRMvZzK2Iy-Ujl9P7w.01MxEDLwIzW}
+
+## Level114
+same as the argv envp challenge
+pwn.college{wm3XxMFnoKmQHtgqOGCoTgrfAN1.0FNxEDLwIzW}
+
+## Level115
+same as 114
+pwn.college{krtssPx49H3uHwBbuHmDUfu2m6S.0VNxEDLwIzW}
+
+## Level116
+Term1:
+mkfifo /tmp/pwn
+./116 > /tmp/pwn
+
+Term2:
+echo password > /tmp/pwn
+pwn.college{oG9IF_3FCpywo0tlzkmNzvkfryl.0lNxEDLwIzW}
+
+## Level117
+Term1:
+mkfifo /tmp/pwn
+./117 > /tmp/pwn
+
+Term2:
+echo test > /tmp/pwn
+cat /tmp/pwn
+pwn.college{ErdYDwhCyOEDG21UM5XXQNmK6D0.01NxEDLwIzW}
+
+## Level118
+Term1:
+mkfifo /tmp/test1 /tmp/test2
+./118 < /tmp/test1 > /tmp/test2
+
+Term2:
+echo password > /tmp/test1
+cat /tmp/test2
+pwn.college{EDBOYA3R4aqKXF1Q4ENYxpz6Fn7.0FOxEDLwIzW}
+
+## Level119
+Term1:
+./119 < /tmp/test1 > /tmp/test2
+
+Term2:
+cat > /tmp/test1
+
+Term3: 
+cat < /tmp/test2
+
+Term2:
+enter solution
+pwn.college{Q1tr18qKk9NSxcBz-laDBT3o3Jw.0VOxEDLwIzW}
+
+## Level121
+script.c
+```
+int pid = fork();
+	if(pid==0) {
+		static char *argv[] = {};
+		execv("/challenge/embryoio_level121", argv); // execv
+		exit(127);
+	}
+	else
+```
+pwn.college{45UpHT9mHa5EekXZOyAQnuJWz1H.0VMyEDLwIzW}
+
+## Level122
+same as lvl29
+pwn.college{cH7ebnhdn-7nk72JQT_jiyjiUMx.0lMyEDLwIzW}
+
+## Level
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
