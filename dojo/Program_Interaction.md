@@ -1007,6 +1007,12 @@ echo kfpnbdsa > /tmp/test1
 cat /tmp/test2
 pwn.college{4ojZ_J1FmDNucxWE6PwEn0VxeHO.0VNwEDLwIzW}
 
+## Level106
+same as 119
+pwn.college{UoNxarTc-YLbLJ6ypDPgfbVBSWw.0lNwEDLwIzW}
+
+## Level107
+
 ## Level110 
 kill -s SIGHUP 108
 pwn.college{Y4rU8xojyTHCSOlAOUFQsoi11gF.0FMxEDLwIzW}
@@ -1095,8 +1101,16 @@ pwn.college{45UpHT9mHa5EekXZOyAQnuJWz1H.0VMyEDLwIzW}
 same as lvl29
 pwn.college{cH7ebnhdn-7nk72JQT_jiyjiUMx.0lMyEDLwIzW}
 
-## Level
+## Level23
+script.c same as 122
+kill -8 SIGHUP 111
+pwn.college{AGiZRrkpZMhdyuNC38KcCibbHKr.01MyEDLwIzW}
 
+## Level124
+same kill -s thing
+pwn.college{8U1jiRh86V0tvrlnprFTlcBOrjb.0FNyEDLwIzW}
+
+## Level125
 
 
 
