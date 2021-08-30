@@ -922,6 +922,12 @@ echo solution > /tmp/tmp1
 pwn.college{gwJNgw3FMPoydd8qNGn7TTdQXeX.QXzkDLwIzW}
 
 ## Level94
+./script.sh
+```
+#!/bin/bash
+/challenge/$HOSTNAME exec 82<> /tmp/pwn
+```
+pwn.college{ESaMhc9cN79KJHbRZb5ByqqN_0n.QX0kDLwIzW}
 
 ## Level95
 ./script.sh
@@ -934,6 +940,23 @@ pwn.college{EA61q5ts7NUMcnuu6WwhfFEytvh.QX1kDLwIzW}
 ## Level96
 same script.sh from 95
 pwn.college{QQL7MedoCzL3pALPIfQz6s1ltDL.QX2kDLwIzW}
+
+## Level97
+Term1:
+./script.sh run the challenge
+
+Term2:
+kill -s SIGHUP 146 //[PID 146] in this order: ['SIGHUP']
+pwn.college{wK5TOUcIq6k2yFMjPwrV7WTlNLt.QX3kDLwIzW}
+
+## Level98
+run ./script.sh
+kill -s SIGHUP SIGHUP SIGUSR1 SIGABRT SIGABRT 105 // Only first SIGHUP sent
+kill -s SIGHUP SIGUSR1 SIGABRT SIGABRT 105
+kill -s SIGUSR1 SIGABRT SIGABRT 105
+kill -s SIGABRT SIGABRT 105
+kill -s SIGABRT 105
+pwn.college{0cfK4VI40EXqVtDGyxNuMbJX0eu.QX4kDLwIzW}
 
 ## Level99
 same script.c and script.py as 101
@@ -953,3 +976,6 @@ pwn.college{0A_8EG8bo0Hxe-neIZlQ4_roQRt.0VMwEDLwIzW}
 same script.c as late 89
 subprocess in script.py as "./script"
 pwn.college{o5jcnlU0E85JwbqrSiPIcZx78xu.0lMwEDLwIzW}
+
+## Level103
+
