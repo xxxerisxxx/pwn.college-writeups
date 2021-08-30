@@ -907,6 +907,22 @@ Term2:
 echo bdjfsvxb > /tmp/test
 pwn.college{Avr9q9vKyj7aaX5fcp1x9Nop_uV.QXykDLwIzW}
 
+## level93
+Term1:
+./script.sh same as 92
+
+Term2: 
+cat < /tmp/tmp1
+exec 3> /tmp/tmp1 &
+cat /tmp/tmp2
+
+Term3:
+echo solution > /tmp/tmp1
+
+pwn.college{gwJNgw3FMPoydd8qNGn7TTdQXeX.QXzkDLwIzW}
+
+## Level94
+
 ## Level95
 ./script.sh
 ```
