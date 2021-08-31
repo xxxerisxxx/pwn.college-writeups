@@ -1084,6 +1084,23 @@ Term2:
 enter solution
 pwn.college{Q1tr18qKk9NSxcBz-laDBT3o3Jw.0VOxEDLwIzW}
 
+## Level120
+script.c
+```
+int pid = fork();
+	if(pid==0) {
+		static char *argv[] = {};
+		dup2(0,117);
+		execve("/challenge/embryoio_level120",0,0); // execv
+		exit(127);
+	}
+	else {
+//		wait
+		waitpid(pid,0,0);
+	}	
+```
+pwn.college{kkkYjTtJG69Qo5cm7m4Q12Ev8eX.0FMyEDLwIzW}
+
 ## Level121
 script.c
 ```
@@ -1216,10 +1233,75 @@ while(True):
 ```
 pwn.college{Yxq13oxhl41Ri65vJvFoEGF6LPe.01NyEDLwIzW}
 
+## Level128
+Same as 127
+pwn.college{4cyLhlsmOZLks_x5HG4ICK7wO6m.0FOyEDLwIzW}
 
+## level129
+script.py
+```
+#!/bin/python3
+import pwn
+import os
+import time
 
+#args=["bash script.sh"]
+p = pwn.process("./script.sh")
+for i in range(6):
+    p.recvline()
 
+count = 1
+while (True):
+    tmp = p.recvline()
+    if("for: " in tmp.decode()):
+        problem = tmp.decode().split("for: ")
+        p.sendline(str(eval(problem[1])))
+        p.recvline()
+    else:
+        count = count + 1
+        print(tmp)
+    
+for i in range(3):
+    print(p.recvline().decode())
+```
+script.sh
+``` cat | /challenge/embryoio_level129 | cat ```
+pwn.college{sYbe0OmLsOjPE8sFic3r144_XI5.0VOyEDLwIzW}
 
+## Level130
+script.py
+```
+#!/usr/bin/python3
+import pwn
+from pwn import *
+
+p = pwn.process("/challenge/embryoio_level130")
+for i in range(6):
+    p.recvline()
+
+count = 1
+while (True):
+    tmp = p.recvline()
+    if("for: " in tmp.decode()):
+        problem = tmp.decode().split("for: ")
+        p.sendline(str(eval(problem[1])))
+        p.recvline()
+    else:
+        count = count + 1
+        print(tmp)
+    
+for i in range(3):
+    print(p.recvline().decode())
+```
+pwn.college{curWJpe6sOLt25IV-peFsEh2BUo.0FMzEDLwIzW}
+
+## Level131
+script.py same as 130
+script.sh
+``` /challenge/embryoio_level130```
+pwn.college{8sJGS1xXpMh7Xj5hb_vqlXXIHTN.0VMzEDLwIzW}
+
+## Level132
 
 
 
