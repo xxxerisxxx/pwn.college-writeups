@@ -143,7 +143,13 @@ pwn.college{wZAYkQR8zu7woR2jzsKUtU6GyOl.0lM3EDLwIzW}
 pwn.college{s_KsBziJ7p3SxX5Wwt3VoGsharH.01M3EDLwIzW}
 
 ## Level32
+/bin/ed -p ':' /flag
+:1
+pwn.college{oEf5EmdZVd7lhbg4RV83i3mEjbb.0FO3EDLwIzW}
 
+## Level33
+/bin/whiptail --textbox /flag 15 15
+pwn.college{ExYQoIQTpmZUfUdR-_OmU9H2JQk.0VN3EDLwIzW}
 
 ## Level34
 /bin/awk '{ print $1 }' /flag
@@ -165,9 +171,34 @@ pwn.college{IySyvfWd40QDmx-ZDySpfKpfliG.0FM4EDLwIzW}
 /bin/cp /flag /tmp/flag --no-preserve=mode
 pwn.college{cZqwJ2_7WV58QAM_3yykrJRzgGn.0VM4EDLwIzW}
 
+## Level41
+perl -ne'1..10 and print' /flag
+pwn.college{M2HBzqkjxCRramBMkKgxH2UClQB.01M4EDLwIzW}
+
 ## Level42
 /bin/python /flag
 pwn.college{8y6gtiOYBGpKUUiwveBY6gTIN-H.0FN4EDLwIzW}
+
+## Level43
+/bin/ruby -0777 /flag
+pwn.college{0NiDqcgyIOxxyVuqsUevoUWPWku.0VN4EDLwIzW}
+
+## Level45
+/bin/date -f /flag
+/bin/date: invalid date ‘pwn.college{wE6uI_yqHLBDHheXFt90o32XpjH.01N4EDLwIzW}’
+
+## Level46
+/bin/dmesg -F /flag
+[    0.000000] pwn.college{YxaoPZcLIKs6mwxRpob1T0jfSz4.0FO4EDLwIzW}
+
+## Level47
+/bin/wc --files0-from=/flag
+/bin/wc: 'pwn.college{kAUFJ5r8QwTJLV_jjx7UiBCaF5W.0VO4EDLwIzW}'$'\n': No such file or directory
+
+## Level49
+as /flag
+/flag: Assembler messages:
+/flag:1: Error: no such instruction: pwn.college{EIX6mnsi95EGwpRgk5pFSr1lM4g.0VM5EDLwIzW}
 
 ## Level50
 Term1:
