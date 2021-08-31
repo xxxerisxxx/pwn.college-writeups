@@ -1111,15 +1111,110 @@ same kill -s thing
 pwn.college{8U1jiRh86V0tvrlnprFTlcBOrjb.0FNyEDLwIzW}
 
 ## Level125
+script.sh
+```
+cd /challenge
+./embryoio_level125
+```
+python3 script.py
+```
+#!/usr/bin/python3
+import pwn
+from pwn import *
 
+args=["bash script.sh"]
+p = pwn.process(shell=True,argv=args)
+#p.recvuntil(b"for:")
+for i in range(6):
+    p.recvline()
 
+count = 50
+for i in range(count):
+    tmp = p.recvline()
+#    if("for: " in tmp.decode()):
+    problem = tmp.decode().split("for: ")
+    p.sendline(str(eval(problem[1])))
+    p.recvline()
+    # else:
+    #     count = count + 1
+    
+for i in range(3):
+    print(p.recvline().decode())
+```
+pwn.college{sx038oojIjRPbSmARrbfgG-kven.0VNyEDLwIzW}
 
+## Level126
+script.py
+```
+#!/usr/bin/python3
+import pwn
+from pwn import *
 
+args=["bash script.sh"]
+p = pwn.process(shell=True,argv=args)
 
+for i in range(6):
+    p.recvline()
 
+count = 1
+while (True):
+    tmp = p.recvline()
+    if("for: " in tmp.decode()):
+        problem = tmp.decode().split("for: ")
+        p.sendline(str(eval(problem[1])))
+        p.recvline()
+    else:
+        count = count + 1
+        print(tmp)
+    
+for i in range(3):
+    print(p.recvline().decode())
+```
+pwn.college{gSazfwvPE41BYiDB57BafcEB-oB.0lNyEDLwIzW}
 
+## Level127
+script.py
+```
+import pwn
+import os
+import time
 
+args=["bash script.sh"]
 
+p = pwn.process(shell=True,argv=args)
+
+for i in range(7):
+    p.recvline()
+
+x = p.recvline().decode().split(':') #order: sigsisgs
+pid = int(x[0][29:32]) #sig #
+print(pid)
+a = x[1].split("'") #remove the '
+c = []
+
+for i in range(len(a)):
+    if(not(len(a[i])==2)):
+        c.append(a[i])
+
+for i in range(len(c)):
+    if c[i]=="SIGUSR2":
+        os.kill(pid,12)
+    if c[i]=="SIGUSR1":
+        os.kill(pid,10)
+    if c[i]=="SIGINT":
+        os.kill(pid,2)
+    if c[i]=="SIGHUP":
+        os.kill(pid,1)
+    if c[i]=="SIGABRT":
+        os.kill(pid,6)
+    print(p.recvline().decode())
+    print(p.recvline().decode())
+    time.sleep(.1)
+
+while(True):
+    print(p.recvline().decode())
+```
+pwn.college{Yxq13oxhl41Ri65vJvFoEGF6LPe.01NyEDLwIzW}
 
 
 
