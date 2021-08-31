@@ -149,9 +149,9 @@ pwn.college{wZAYkQR8zu7woR2jzsKUtU6GyOl.0lM3EDLwIzW}
 pwn.college{s_KsBziJ7p3SxX5Wwt3VoGsharH.01M3EDLwIzW}
 
 ## Level32
-/bin/ed -p ':' /flag
-:1
-pwn.college{oEf5EmdZVd7lhbg4RV83i3mEjbb.0FO3EDLwIzW}
+Set up listener on port 80
+socat -u /flag TCP:localhost:80
+pwn.college{MwB2Xfj_pg0A-gCd09Q3SRiXvWV.0FN3EDLwIzW}
 
 ## Level33
 /bin/whiptail --textbox /flag 15 15
@@ -164,6 +164,11 @@ pwn.college{glq7ddgzpKyML8RqyDV4a7hgJQC.0lN3EDLwIzW}
 ## Level35
 /bin/sed 's/pwn/pwn/1' /flag
 pwn.college{EtRbzYrJZRlAhJjBzZZWjCASBXu.01N3EDLwIzW}
+
+## Level36
+/bin/ed -p ':' /flag
+:1
+pwn.college{oEf5EmdZVd7lhbg4RV83i3mEjbb.0FO3EDLwIzW}
 
 ## Level37
 bin/chown -R hacker:root /flag
