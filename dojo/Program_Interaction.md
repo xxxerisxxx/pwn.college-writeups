@@ -434,7 +434,7 @@ pwn.college{kOmQtlyMygdnSPhZQQRdD1qNrgs.QXzQDLwIzW}
 /challenge/embryoio_level44 | sed 's/1/1/'
 pwn.college{UkPFhQSflqNjDxcuk1BYSxmvaue.QX0QDLwIzW}
 
-## Level 45
+## Level45
 ```
 #!/bin/bash
 touch /tmp/temp
@@ -1012,6 +1012,17 @@ same as 119
 pwn.college{UoNxarTc-YLbLJ6ypDPgfbVBSWw.0lNwEDLwIzW}
 
 ## Level107
+script.c is just like 119
+python3 subprocess the ./script
+pwn.college{0hgPsjftLyYTVKnLm43dCfrnXgn.01NwEDLwIzW}
+
+## Level108
+python3 subprocess the challenge and run script.py
+pwn.college{4uTBuQuomQxFL-I4uvNJNQ_vUjW.0FOwEDLwIzW}
+
+## Level109
+same as 108
+pwn.college{c-AbpwBxHnIzqqBLDoEqBDj1lDZ.0VOwEDLwIzW}
 
 ## Level110 
 kill -s SIGHUP 108
