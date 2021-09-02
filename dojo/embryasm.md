@@ -15,6 +15,19 @@ pwn.college{c1tEi6f_VaaYW9pzT2FDFBo4P7p.0FN5EDLwIzW}
 same as level1 but do add rdi, 0x331337 instead
 pwn.college{0HnRWJUKe8ExwGQLZAaQTPI3aSH.0VN5EDLwIzW}
 
+## Level3
+```
+imul rdi, rsi
+add rdi, rdx
+mov rax, rdi
+```
+pwn.college{YS0lpFbEIIxJmQJRV9vPPBTx3HC.0lN5EDLwIzW}
+
+## Level4
+```
+
+```
+
 ## Level6
 solve.py
 ```
