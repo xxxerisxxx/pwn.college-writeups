@@ -24,15 +24,40 @@ mov rax, rdi
 pwn.college{YS0lpFbEIIxJmQJRV9vPPBTx3HC.0lN5EDLwIzW}
 
 ## Level4
+cheesed:
 ```
+mov ax, di
+div sil ;idiv works too
+; run this until it leaks the flag
+```
+right, not-over-complicated way:
+```
+mov rax, rdi
+div rsi
+```
+pwn.college{IR6Nd-i76hpeApMO_kf-fr78dQK.01N5EDLwIzW}
 
+## Level5
+cheesed way
 ```
+mov rsi, rdi
+div rax
+```
+gives unhandled error exception
+
+more accurate cheesed way
+```
+mov rax, 0
+mov al, sil
+div rsi
+```
+pwn.college{8TKrbPMHXsrIrxs8_4Tx4MRUAMl.0FO5EDLwIzW}
 
 ## Level6
 solve.py
 ```
 mov rax, 0
-mov al, dil ; lower 8 bytes of rdi into lower 8 bytes of rax
+mov al, dil ; lower 8 bits of rdi into lower 8 bits of rax
 mov rbx, 0
 mov bx, si ; lower 16 of rsi into lower 16 rbx
 ```
