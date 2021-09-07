@@ -63,6 +63,76 @@ mov bx, si ; lower 16 of rsi into lower 16 rbx
 ```
 pwn.college{UWejoJijZ__U4tHGY9XBBGonpNV.0VO5EDLwIzW}
 
+## Level7
+```
+mov rax, rdi 
+shl rax, 32 // move completely to left
+shr rax, 56 // move compeltely to right, fill w/ 0
+```
+pwn.college{orVIqIw06SdYjBDU8Hm5XKqWcfR.0FMwIDLwIzW}
+
+## Level8
+```
+and rdi, rsi
+or rax, 0xFFFFFF // set rax to all 1's
+and rax, rdi // w/o move instruction
+```
+pwn.college{Ypk4p3Nz2Qtp08q2I4u2FPnFMC4.0VMwIDLwIzW}
+
+## Level9
+```
+xor rax, rax
+```
+Not cheese:
+```
+//clear rax
+xor rax, rax
+//set the last bit to 1 (odd)
+or rax, 0b1
+//if even, set last bit to 1 else set to 0. This screws up the other bits tho
+xor rax, rdi
+//clear all but the last bit
+and rax, 0b1
+```
+pwn.college{Erzx2O4k1prveU5R77F1ywZeca6.0lMwIDLwIzW}
+
+## Level10
+```
+    mov rax, [0x404000]
+    add dword ptr [0x404000], 0x1337
+```
+pwn.college{oJ2c0bIriZFgxVid5kxpRa95E8q.01MwIDLwIzW}
+
+## Level11
+```
+    mov al, BYTE PTR[0x404000]
+    mov bx, WORD PTR[0x404000]
+    mov ecx, DWORD PTR[0x404000]
+    mov rdx, QWORD PTR[0x404000]
+```
+pwn.college{Q1GqcWVfp1vAyzOCFr7IQ5Pk0dy.0FNwIDLwIzW}
+
+## Level14
+```
+// rdi = 0x1354a, (stack) [0x7fffff1ffff8] = 0x14f0d766 (last 4 bytes is r8)
+    pop r8
+    sub r8, rdi
+    push r8 // push new value back onto stack
+```
+pwn.college{8xQ3s0UBY62gEkY68Jy5g8s1WOn.01NwIDLwIzW}
+
+## Level15
+```
+// rdi = 2, rsi = 5
+// swap the 2 and 5
+    push rdi
+    push rsi
+    pop rdi
+    pop rsi // like taking jenga pieces out from the bottom
+```
+pwn.college{U1CJyAEBDPyXy2EwnrNL2GJ5dsJ.0FOwIDLwIzW}
+
+
 ## Level18
 solve.py (don't ever run with comments)
 ```
