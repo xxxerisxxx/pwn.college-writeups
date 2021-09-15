@@ -203,3 +203,56 @@ done:
     div r12
 ```
 pwn.college{Mi7rY0bTndEaLn17MKItgafh4jj.01MxIDLwIzW}
+
+## Level23
+```
+push rbp
+mov rbp, rsp
+sub rsp, 256 
+# initialize all 256 as 0
+
+
+mov r12, 0 #b
+mov r13, 0 #i
+
+loop: #for loop
+cmp r13, rsi
+je done
+mov rax, 0
+mov al, byte ptr [rdi+r13]
+mov rbx, rbp
+sub rbx, rax
+inc byte ptr[rbx]
+inc r13
+jmp loop
+
+done:
+# 2nd loop
+mov r13, 0
+mov r14, 0
+mov r15, 0
+
+loop2:
+cmp r13, 256
+je done2
+mov rbx, rbp
+sub rbx, r13
+mov rax, 0
+mov al, byte ptr [rbx]
+cmp rax, r14
+jle not_greater
+mov r14, rax
+mov r15, r13
+
+not_greater:
+inc r13
+jmp loop2
+
+done2:
+mov rax, r15
+
+
+leave // mov rsp, rbp (stack=base ptr)
+ret
+```
+pwn.college{4f8oPk4C-BstdZVcOBLhI7AgtXC.0lNxIDLwIzW}
