@@ -1,0 +1,7 @@
+# Level41
+Asking to compile a c program
+Fork
+Redirect stdout to another process
+
+C: looks just like stock Level30 dojo
+``` ./41 | cat > /tmp/temp ```
