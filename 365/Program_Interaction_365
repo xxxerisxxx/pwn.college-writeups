@@ -1,3 +1,7 @@
+# Level30
+stdout needs to be a pipe
+```/challenge/interactive_30 | rev > /tmp/temp```
+
 # Level41
 Asking to compile a c program
 Fork
