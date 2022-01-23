@@ -2,6 +2,20 @@
 stdout needs to be a pipe
 ```/challenge/interactive_30 | rev > /tmp/temp```
 
+## Level37
+Basic redirect to stdout
+```
+import pwn
+
+cat = pwn.process("cat")
+
+proc = pwn.process("/challenge/interaction_level37",stdout=cat.stdin)
+
+print(cat.recvall(2).decode())
+
+proc.interactive()
+```
+
 # Level41
 Asking to compile a c program
 Fork
