@@ -1,3 +1,6 @@
+argv[555] = 'somestring'
+https://linuxize.com/post/bash-for-loop/
+
 # Level30
 stdout needs to be a pipe
 ```/challenge/interactive_30 | rev > /tmp/temp```
