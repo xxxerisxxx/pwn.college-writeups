@@ -24,6 +24,10 @@ Redirect stdout to another process
 C: looks just like stock Level30 dojo
 ``` ./41 | cat > /tmp/temp ```
 
+# Level48
+
+![48](https://user-images.githubusercontent.com/45490952/151486697-b22af2c5-878e-46e3-b3b5-c5cf395b1664.png)
+
 # Level56
 C program needs argv[0] to be /tmp/wewngt
 argv[0] pass in differently from path to execute
