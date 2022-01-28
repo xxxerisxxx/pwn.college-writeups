@@ -1,4 +1,7 @@
 argv[555] = 'somestring'
+
+https://www.geeksforgeeks.org/bash-scripting-for-loop/
+
 https://linuxize.com/post/bash-for-loop/
 
 # Level30
