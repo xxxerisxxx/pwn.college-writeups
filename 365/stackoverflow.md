@@ -132,24 +132,20 @@ for c in combos:
 ```
 
 # Level5 (like lvl2 and lvl4)
-win_offset :: p win
-
 (objdump offsets)
-win_offset = 1 2f0 #pwn.p8(0xf0)
-win+15_off = 12ff #pwn.p8(0xff)
-main_offset = 1 5fc
+win_offset = 1 2f0
+win+2_offset = 1306 #0x06
 
 (gdb)
-b vuln = 1 36d
+b vuln = 1 3 6d
 #changes
-Breakpoint 1 (vuln) = 0x000055dfc9b7 a 36d
-p win = 0x55dfc9b7 a 2f0 (won't work)
-p win+15 = 0x555ca33d f 2ff
-p main = 0x55dfc9b7 a 5fc
+Breakpoint 1 (vuln) = 0x000055dfc9b7 a 3 6d
+#p win = 0x55dfc9b7 a 2f0 (won't work)
+p win+ = 1 3 06
+#3=3
 
-p win = 0x55dfc9b7 a 2 f0 
-0x000000000000 1 2 ff <+15>:    cmpl   $0x1337,-0x4(%rbp)
-combos = 0x?2 #impossible to win, how do I jump further into win()?
+p win+ = 1 3 06
+combos = 0x?3 #impossible to win, how do I jump further into win()?
 
 (cyclic)
 offset = 0x0000556a8a6585f9 #changes
